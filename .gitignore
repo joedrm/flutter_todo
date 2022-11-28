@@ -29,10 +29,10 @@
 .packages
 .pub-cache/
 .pub/
-/build/ios
-/build/macos
-/build/flutter_assets
-/build/android
+/build/ios/
+/build/macos/
+/build/flutter_assets/
+/build/android/
 
 # Web related
 lib/generated_plugin_registrant.dart

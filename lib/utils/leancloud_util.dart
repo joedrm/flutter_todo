@@ -9,9 +9,11 @@ class LeanCloudUtil {
         server: "https://dichan.nnxkcloud.com", queryCache: LCQueryCache());
   }
 
-  static Future<List<LCObject>> query(String className, int limit) async {
+  static Future<List<LCObject>> query(String className, int limit, {int skip = 0}) async {
     LCQuery<LCObject> query = LCQuery<LCObject>(className);
     query.limit(limit);
+    query.orderByDescending('createdAt');
+    query.skip(skip);
     return await query.find() ?? [];
   }
 

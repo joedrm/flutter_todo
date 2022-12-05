@@ -13,32 +13,45 @@ class NewsPage extends StatefulWidget {
 }
 
 class _NewsPageState extends State<NewsPage> {
+  final ScrollController _controller = ScrollController();
   List<DiChanNewsModel> datas = [];
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-
+    addScrollListener();
     fetchData();
   }
 
+  void addScrollListener() {
+    if (Device.isMobile) return;
+    _controller.addListener(() {
+      if (_controller.position.pixels >=
+          _controller.position.maxScrollExtent - 40) {
+        fetchData();
+      }
+    });
+  }
+
   fetchData() async {
-    List<LCObject> results =
-        await LeanCloudUtil.query(LeanCloudUtil.dichanNews, 20);
+    List<LCObject> results = await LeanCloudUtil.query(
+        LeanCloudUtil.dichanNews, 20,
+        skip: datas.length);
     List<DiChanNewsModel> histories = [];
     for (LCObject element in results) {
       DiChanNewsModel historyPo = DiChanNewsModel.fromJson(element);
       histories.add(historyPo);
     }
-    datas = histories;
+    datas.addAll(histories);
     setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    double width = double.infinity;
-    if (Device.isWeb) width = MediaQuery.of(context).size.width * 0.5;
+    var screenW = MediaQuery.of(context).size.width;
+    double width = screenW;
+    if (Device.isWeb && screenW > 1000) width = screenW * 0.5;
     return Scaffold(
       backgroundColor: const Color(0xfff3f3f3),
       body: Row(
@@ -51,7 +64,7 @@ class _NewsPageState extends State<NewsPage> {
               behavior:
                   ScrollConfiguration.of(context).copyWith(scrollbars: false),
               child: ListView.separated(
-                  controller: ScrollController(),
+                  controller: _controller,
                   itemBuilder: (ctx, index) {
                     DiChanNewsModel model = datas[index];
                     return GestureDetector(
@@ -123,7 +136,7 @@ class _NewsPageState extends State<NewsPage> {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         model.author ?? "",
@@ -132,11 +145,12 @@ class _NewsPageState extends State<NewsPage> {
                                             color: Color(0xFF909090)),
                                       ),
                                       const SizedBox(
-                                        height: 10,
+                                        width: 10,
                                       ),
                                       Text(
                                         model.createTime ?? "",
-                                        style: const TextStyle(fontSize: 12),
+                                        style: const TextStyle(fontSize: 12,
+                                            color: Color(0xFF878787)),
                                       )
                                     ],
                                   )

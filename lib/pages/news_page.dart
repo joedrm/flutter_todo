@@ -99,7 +99,11 @@ class _NewsPageState extends State<NewsPage> {
                               ),
                               //card_place_image.png
                               errorWidget: (context, url, error) {
-                                return const Icon(Icons.error);
+                                return SizedBox(
+                                  width: 150,
+                                  height: 90,
+                                  child: Text(error.toString()),
+                                );
                               },
                               fadeOutDuration: const Duration(seconds: 1),
                               fadeInDuration: const Duration(seconds: 2),
@@ -149,7 +153,8 @@ class _NewsPageState extends State<NewsPage> {
                                       ),
                                       Text(
                                         model.createTime ?? "",
-                                        style: const TextStyle(fontSize: 12,
+                                        style: const TextStyle(
+                                            fontSize: 12,
                                             color: Color(0xFF878787)),
                                       )
                                     ],

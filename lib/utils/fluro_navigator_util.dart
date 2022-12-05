@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../app.dart';
 
 /// fluro的路由跳转工具类
-class NavigatorUtils {
+class FluroNavigatorUtil {
   
   static push(BuildContext context, String path,
       {bool replace = false, bool clearStack = false}) {

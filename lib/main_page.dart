@@ -67,7 +67,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 
   toPage(int index) {
     Map<String, dynamic> data = pages[index];
-    NavigatorUtils.push(context, data["route"]);
+    FluroNavigatorUtil.push(context, data["route"]);
     // NavigatorUtil.push(context, (data["page"] as Widget));
   }
 }

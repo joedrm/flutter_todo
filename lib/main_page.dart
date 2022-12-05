@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
+import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
 import 'package:flutter_todo/utils/navigator_util.dart';
 
@@ -13,8 +15,12 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
   List<Map<String, dynamic>> pages = [
-    {"title": "tab 页面", "page": const BottomTabPage()},
-    {"title": "新闻列表", "page": const NewsPage()},
+    {
+      "title": "tab 页面",
+      "page": const BottomTabPage(),
+      "route": MyRoutes.tabPage
+    },
+    {"title": "新闻列表", "page": const NewsPage(), "route": MyRoutes.newsPage},
   ];
 
   @override
@@ -61,6 +67,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 
   toPage(int index) {
     Map<String, dynamic> data = pages[index];
-    NavigatorUtil.push(context, (data["page"] as Widget));
+    NavigatorUtils.push(context, data["route"]);
+    // NavigatorUtil.push(context, (data["page"] as Widget));
   }
 }

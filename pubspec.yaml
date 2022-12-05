@@ -11,8 +11,9 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   dio: ^4.0.4
-
-
+  leancloud_storage: ^0.7.8
+  cached_network_image: ^3.2.0
+  universal_platform: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:

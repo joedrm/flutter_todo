@@ -581,13 +581,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.0+1"
-  url_strategy:
-    dependency: "direct main"
-    description:
-      name: url_strategy
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.2.0"
   uuid:
     dependency: transitive
     description:

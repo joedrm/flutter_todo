@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
+import 'package:flutter_todo/pages/test_route_page.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
-import 'package:flutter_todo/utils/navigator_util.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -21,6 +21,11 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       "route": MyRoutes.tabPage
     },
     {"title": "新闻列表", "page": const NewsPage(), "route": MyRoutes.newsPage},
+    {
+      "title": "路由导航及传参",
+      "page": TestRoutePage(),
+      "route": MyRoutes.testRoutePage
+    },
   ];
 
   @override

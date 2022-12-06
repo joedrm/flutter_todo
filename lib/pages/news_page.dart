@@ -6,6 +6,7 @@ import 'package:flutter_todo/utils/leancloud_util.dart';
 import 'package:leancloud_storage/leancloud.dart';
 
 class NewsPage extends StatefulWidget {
+
   const NewsPage({Key? key}) : super(key: key);
 
   @override

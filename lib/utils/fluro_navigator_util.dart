@@ -8,13 +8,13 @@ class FluroNavigatorUtil {
   static push(BuildContext context, String path,
       {bool replace = false, bool clearStack = false}) {
     FocusScope.of(context).unfocus();
-    Application.router.navigateTo(context, path, replace: replace, clearStack: clearStack, transition: TransitionType.cupertino);
+    MyRoutes.router.navigateTo(context, path, replace: replace, clearStack: clearStack, transition: TransitionType.cupertino);
   }
 
   static pushResult(BuildContext context, String path, Function(Object) function,
       {bool replace = false, bool clearStack = false}) {
     FocusScope.of(context).unfocus();
-    Application.router.navigateTo(context, path, replace: replace, clearStack: clearStack, transition: TransitionType.cupertino).then((result) {
+    MyRoutes.router.navigateTo(context, path, replace: replace, clearStack: clearStack, transition: TransitionType.cupertino).then((result) {
       // 页面返回result为null
       if (result == null) {
         return;

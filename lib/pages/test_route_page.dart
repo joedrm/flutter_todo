@@ -1,6 +1,8 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_todo/utils/url_launcher_util.dart';
+
 // import 'package:url_launcher/url_launcher.dart';
 import '../app.dart';
 
@@ -15,6 +17,7 @@ class TestRoutePage extends StatelessWidget {
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RaisedButton(
               child: const Text("TestRoutePage"),
@@ -25,23 +28,24 @@ class TestRoutePage extends StatelessWidget {
                     .then((value) => print(value));
               },
             ),
-            // MaterialButton(
-            //   child: const Text("文章地址"),
-            //   onPressed: _launchUrl,
-            // ),
+            const SizedBox(
+              height: 80,
+            ),
+            MaterialButton(
+              child: const Text("文章地址"),
+              onPressed: _launchUrl,
+            ),
           ],
         ),
       ),
     );
   }
 
-  final Uri _url = Uri.parse(
-      'https://mp.weixin.qq.com/s?__biz=Mzg2Mjg3Nzg3NA==&mid=2247483724&idx=1&sn=5a30947fa11f0cc8e94b7f6a9bb78a53&chksm=ce006091f977e987ae70707ba95d9f34523ee3164a3ffcd0a70fff9d7cee2b18616b3dd018e4&token=1501996251&lang=zh_CN#rd');
+  final String _url =
+      '__biz=Mzg2Mjg3Nzg3NA==&mid=2247483724&idx=1&sn=5a30947fa11f0cc8e94b7f6a9bb78a53&chksm=ce006091f977e987ae70707ba95d9f34523ee3164a3ffcd0a70fff9d7cee2b18616b3dd018e4&token=1501996251&lang=zh_CN#rd';
 
   Future<void> _launchUrl() async {
-    // if (!await launchUrl(_url)) {
-    //   throw 'Could not launch $_url';
-    // }
+    await UrlLauncherUtil.openWXArticle(_url);
   }
 }
 

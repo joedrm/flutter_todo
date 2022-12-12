@@ -15,7 +15,9 @@ dependencies:
   cached_network_image: ^3.2.0
   universal_platform: ^1.0.0+1
   fluro: ^2.0.3 #路由
-#  url_launcher: ^5.0.0
+#  image_picker: ^0.6.1+10
+  url_launcher: ^6.0.10
+  url_launcher_web: 2.0.6
 #  url_strategy: ^0.2.0
 
 dev_dependencies:

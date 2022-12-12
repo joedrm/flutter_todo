@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
+import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
@@ -25,6 +26,11 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       "title": "路由导航及传参",
       "page": TestRoutePage(),
       "route": MyRoutes.testRoutePage
+    },
+    {
+      "title": "Flutter异步编程中Completer和compute的使用",
+      "page": const TestAsyncPage(),
+      "route": MyRoutes.testAsyncPage
     },
   ];
 

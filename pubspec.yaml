@@ -35,6 +35,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/tabs/
+    - assets/file/
 
 #  fonts:
 #    - family: XiaoWei

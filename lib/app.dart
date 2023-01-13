@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
+import 'package:flutter_todo/pages/chrome_extension_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
@@ -19,6 +20,7 @@ class MyRoutes {
   static String testRoutePage = "/testRoutePage";
   static String secondPage = "/secondPage";
   static String testAsyncPage = "/testAsyncPage";
+  static String chromeExtensionPage = "/chromeExtensionPage";
 
   static void configureRoutes() {
     router.notFoundHandler = Handler(
@@ -49,6 +51,9 @@ class MyRoutes {
 
     router.define(testAsyncPage,
         handler: Handler(handlerFunc: (_, __) => TestAsyncPage()));
+
+    router.define(chromeExtensionPage,
+        handler: Handler(handlerFunc: (_, __) => ChromeExtensionPage()));
   }
 }
 

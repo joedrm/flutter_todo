@@ -7,6 +7,12 @@ class UrlLauncherUtil {
     await launchURL(uri);
   }
 
+  static openUri(Uri uri) async {
+    // Uri uri =
+    // Uri(scheme: 'https', host: 'mp.weixin.qq.com', path: 's', query: query);
+    await launchURL(uri);
+  }
+
   static launchURL(Uri uri) async {
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);

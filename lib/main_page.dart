@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
+import 'package:flutter_todo/pages/chrome_extension_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
@@ -32,6 +33,11 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       "page": const TestAsyncPage(),
       "route": MyRoutes.testAsyncPage
     },
+    {
+      "title": "Chrome 扩展程序",
+      "page": ChromeExtensionPage(),
+      "route": MyRoutes.chromeExtensionPage
+    }
   ];
 
   @override

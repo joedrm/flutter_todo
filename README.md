@@ -7,3 +7,4 @@
 - [新闻列表](https://flutter.nnxkcloud.com/#/newsPage)
 - [路由导航及传参](https://flutter.nnxkcloud.com/#/testRoutePage)
 - [Flutter异步编程中Completer和compute的使用](https://flutter.nnxkcloud.com/#/testAsyncPage)
+- [Flutter异步编程中Completer和compute的使用](https://flutter.nnxkcloud.com/#/chromeExtensionPage)

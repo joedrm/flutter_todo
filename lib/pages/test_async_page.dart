@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:io' show File;
+import 'dart:io' show File, Platform;
 import 'dart:typed_data' show Uint8List;
 import 'dart:async' show Completer;
 import 'package:flutter/material.dart' as material
@@ -24,6 +24,20 @@ class _TestAsyncPageState extends State<TestAsyncPage> {
     // TODO: implement initState
     super.initState();
     test();
+
+    if (kIsWeb) {
+      // 运行在Web上
+    } else if (Platform.isAndroid) {
+      // 运行在Android设备上
+    } else if (Platform.isIOS) {
+      // 运行在iOS设备上
+    } else if (Platform.isMacOS) {
+      // 运行在Mac设备上
+    } else if (Platform.isWindows) {
+      // 运行在Windows设备上
+    } else if (Platform.isLinux) {
+      // 运行在Linux设备上
+    } else {}
   }
 
   test() async {
@@ -58,6 +72,7 @@ class _TestAsyncPageState extends State<TestAsyncPage> {
     final Response<String> response = await Dio().request<String>("", data: {});
     try {
       final String data = response.data.toString();
+
       /// 使用compute条件：数据大于10KB（粗略使用10 * 1024）
       /// 主要目的减少不必要的性能开销
       final bool isCompute = data.length > 10 * 1024;

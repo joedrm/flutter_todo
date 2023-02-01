@@ -21,6 +21,7 @@ dependencies:
 #  url_strategy: ^0.2.0
   flutter_hooks: ^0.15.0
   hooks_riverpod: ^0.12.1
+  after_layout:
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +37,7 @@ flutter:
   assets:
     - assets/images/tabs/
     - assets/file/
+    - assets/images/
 
 #  fonts:
 #    - family: XiaoWei

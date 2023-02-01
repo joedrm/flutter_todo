@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/chrome_extension_page.dart';
+import 'package:flutter_todo/pages/flexible_list_header_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
+import 'package:leancloud_storage/leancloud.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -37,6 +39,11 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       "title": "Chrome 扩展程序",
       "page": ChromeExtensionPage(),
       "route": MyRoutes.chromeExtensionPage
+    },
+    {
+      "title": "Flexible ListView Header",
+      "page": const FlexibleListHeaderPage(),
+      "route": MyRoutes.flexibleListHeaderPage
     }
   ];
 
@@ -46,6 +53,8 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     super.initState();
 
     LeanCloudUtil.initSDK();
+
+
   }
 
   @override

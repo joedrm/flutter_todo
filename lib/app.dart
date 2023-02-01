@@ -2,6 +2,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/chrome_extension_page.dart';
+import 'package:flutter_todo/pages/flexible_list_header_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
@@ -21,6 +22,7 @@ class MyRoutes {
   static String secondPage = "/secondPage";
   static String testAsyncPage = "/testAsyncPage";
   static String chromeExtensionPage = "/chromeExtensionPage";
+  static String flexibleListHeaderPage = "/flexibleListHeaderPage";
 
   static void configureRoutes() {
     router.notFoundHandler = Handler(
@@ -54,6 +56,9 @@ class MyRoutes {
 
     router.define(chromeExtensionPage,
         handler: Handler(handlerFunc: (_, __) => ChromeExtensionPage()));
+
+    router.define(flexibleListHeaderPage,
+        handler: Handler(handlerFunc: (_, __) => FlexibleListHeaderPage()));
   }
 }
 
@@ -71,6 +76,7 @@ class App extends StatelessWidget {
       ),
       onGenerateRoute: MyRoutes.router.generator,
       initialRoute: MyRoutes.root,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

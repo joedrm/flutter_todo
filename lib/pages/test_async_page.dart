@@ -9,6 +9,7 @@ import 'dart:typed_data' show Uint8List;
 import 'dart:async' show Completer;
 import 'package:flutter/material.dart' as material
     show Image, ImageConfiguration, ImageStreamListener;
+import 'package:leancloud_storage/leancloud.dart';
 // import 'package:image_picker/image_picker.dart';
 
 class TestAsyncPage extends StatefulWidget {
@@ -38,6 +39,11 @@ class _TestAsyncPageState extends State<TestAsyncPage> {
     } else if (Platform.isLinux) {
       // 运行在Linux设备上
     } else {}
+    register();
+  }
+
+  register() async {
+    await LCSMSClient.requestSMSCode('+8618871878272');
   }
 
   test() async {

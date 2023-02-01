@@ -45,7 +45,7 @@ class FlexibleTopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 300,
-      color: Colors.black12,
+      // color: Colors.black12,
       alignment: Alignment.center,
       child: Image.asset(
         "assets/images/wx_01.png",

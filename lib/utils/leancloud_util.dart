@@ -5,7 +5,7 @@ class LeanCloudUtil {
 
   static initSDK() {
     LeanCloud.initialize(
-        "", "",
+        "ksBmXTHr6nNKU3BcqV1EZHUh-gzGzoHsz", "ZNf7lcaQv2n9y8ita2xwZkzz",
         server: "https://dichan.nnxkcloud.com", queryCache: LCQueryCache());
   }
 

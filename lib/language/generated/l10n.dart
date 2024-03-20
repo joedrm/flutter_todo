@@ -170,6 +170,16 @@ class S {
     );
   }
 
+  /// `Alert`
+  String get alert {
+    return Intl.message(
+      'Alert',
+      name: 'alert',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `This is a alert`
   String get alert_msg {
     return Intl.message(

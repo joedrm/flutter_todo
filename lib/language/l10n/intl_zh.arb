@@ -11,5 +11,6 @@
   "tab_setting": "设置",
   "intl_zh": "中文",
   "intl_en": "英文",
+  "alert": "弹框",
   "alert_msg": "这是一个弹框"
 }

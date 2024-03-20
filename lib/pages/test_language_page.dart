@@ -68,7 +68,7 @@ class _TestLanguagePageState extends State<TestLanguagePage> {
                   color: Colors.blueAccent,
                   child: Center(
                     child: Text(
-                      S.of(context).intl_en,
+                      S.of(context).alert,
                       style: const TextStyle(
                           color: Color(0xFFffffff), fontSize: 22),
                     ),

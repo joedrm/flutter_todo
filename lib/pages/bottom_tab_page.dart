@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/pages/favorite/favorite_page.dart';
 import 'package:flutter_todo/pages/home/home_page.dart';
 import 'package:flutter_todo/pages/search/search_page.dart';
 import 'package:flutter_todo/pages/setting/setting_page.dart';
+import 'package:flutter_todo/resources/styles/app_colors.dart';
 
 class BottomTabPage extends StatefulWidget {
   const BottomTabPage({Key? key}) : super(key: key);
@@ -11,11 +13,11 @@ class BottomTabPage extends StatefulWidget {
   _BottomTabPageState createState() => _BottomTabPageState();
 }
 
-class _BottomTabPageState extends State<BottomTabPage> with TickerProviderStateMixin {
+class _BottomTabPageState extends State<BottomTabPage>
+    with TickerProviderStateMixin {
   List<Widget> pages = [];
   final PageController _pageController = PageController();
   int selectedTabIndex = 0;
-  final List<String> _appBarTitles = ['首页', '搜索', '收藏', '设置'];
   static const double iconWH = 26.0;
 
   @override
@@ -38,40 +40,40 @@ class _BottomTabPageState extends State<BottomTabPage> with TickerProviderStateM
   }
 
   getImage(name, {bool isSelected = true}) => Image.asset(
-    "assets/images/tabs/" + name + (isSelected ? ".png" : "_normal.png"),
-    height: iconWH,
-    width: iconWH,
-  );
+        "assets/images/tabs/" + name + (isSelected ? ".png" : "_normal.png"),
+        height: iconWH,
+        width: iconWH,
+      );
 
   List get tabImages => [
-    [
-      getImage("home", isSelected: false),
-      getImage("home"),
-    ],
-    [
-      getImage("search", isSelected: false),
-      getImage("search"),
-    ],
-    [
-      getImage("favorite", isSelected: false),
-      getImage("favorite"),
-    ],
-    [
-      getImage("setting", isSelected: false),
-      getImage("setting"),
-    ]
-  ];
+        [
+          getImage("home", isSelected: false),
+          getImage("home"),
+        ],
+        [
+          getImage("search", isSelected: false),
+          getImage("search"),
+        ],
+        [
+          getImage("favorite", isSelected: false),
+          getImage("favorite"),
+        ],
+        [
+          getImage("setting", isSelected: false),
+          getImage("setting"),
+        ]
+      ];
 
   Widget _buildBottomItem(String title, int index) {
     Color color = (selectedTabIndex == index)
-        ? const Color(0xFF2D2D2D)
-        : const Color(0xFFCCCCCC);
+        ? AppColors.current.tabItemSelectedColor
+        : AppColors.current.tabItemNormalColor;
     Widget img =
-    (selectedTabIndex == index) ? tabImages[index][1] : tabImages[index][0];
+        (selectedTabIndex == index) ? tabImages[index][1] : tabImages[index][0];
     return Expanded(
-      child: FlatButton(
-          highlightColor: Colors.white,
-          splashColor: Colors.white,
+      child: TextButton(
+          // highlightColor: Colors.white,
+          // splashColor: Colors.white,
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,6 +99,12 @@ class _BottomTabPageState extends State<BottomTabPage> with TickerProviderStateM
 
   Widget bottomBar() {
     List<Widget> tabs = [];
+    final List<String> _appBarTitles = [
+      S.of(context).tab_home,
+      S.of(context).tab_search,
+      S.of(context).tab_favor,
+      S.of(context).tab_setting
+    ];
     for (var i = 0; i < _appBarTitles.length; i++) {
       tabs.add(_buildBottomItem(_appBarTitles[i], i));
     }

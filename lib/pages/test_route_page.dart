@@ -17,7 +17,7 @@ class TestRoutePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
+            TextButton(
               child: const Text("TestRoutePage"),
               onPressed: () {
                 // 跳转到 SecondPage，传参方式和get请求很像
@@ -56,7 +56,7 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: RaisedButton(
+        child: TextButton(
           child: Text(title ?? ""),
           onPressed: () {
             Navigator.pop(context, "SecondPage pop 参数");

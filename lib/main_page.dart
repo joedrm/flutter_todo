@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
+import 'package:flutter_todo/language/generated/l10n.dart';
+import 'package:flutter_todo/pages/app_download/app_download_page.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/chrome_extension_page.dart';
 import 'package:flutter_todo/pages/flexible_list_header_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
+import 'package:flutter_todo/pages/test_language_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
+import 'package:flutter_todo/resources/styles/app_colors.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
-import 'package:leancloud_storage/leancloud.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -18,34 +21,43 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
-  List<Map<String, dynamic>> pages = [
-    {
-      "title": "tab 页面",
-      "page": const BottomTabPage(),
-      "route": MyRoutes.tabPage
-    },
-    {"title": "新闻列表", "page": const NewsPage(), "route": MyRoutes.newsPage},
-    {
-      "title": "路由导航及传参",
-      "page": TestRoutePage(),
-      "route": MyRoutes.testRoutePage
-    },
-    {
-      "title": "Flutter异步编程中Completer和compute的使用",
-      "page": const TestAsyncPage(),
-      "route": MyRoutes.testAsyncPage
-    },
-    {
-      "title": "Chrome 扩展程序",
-      "page": ChromeExtensionPage(),
-      "route": MyRoutes.chromeExtensionPage
-    },
-    {
-      "title": "Flexible ListView Header",
-      "page": const FlexibleListHeaderPage(),
-      "route": MyRoutes.flexibleListHeaderPage
-    }
-  ];
+  List<Map<String, dynamic>> get pages => [
+        {
+          "title": S.of(context).nav_tab,
+          "page": const BottomTabPage(),
+          "route": MyRoutes.tabPage
+        },
+        {
+          "title": S.of(context).nav_news,
+          "page": const NewsPage(),
+          "route": MyRoutes.newsPage
+        },
+        {
+          "title": S.of(context).nav_route,
+          "page": TestRoutePage(),
+          "route": MyRoutes.testRoutePage
+        },
+        {
+          "title": S.of(context).nav_completer,
+          "page": const TestAsyncPage(),
+          "route": MyRoutes.testAsyncPage
+        },
+        {
+          "title": S.of(context).nav_extension,
+          "page": ChromeExtensionPage(),
+          "route": MyRoutes.chromeExtensionPage
+        },
+        {
+          "title": "Flexible ListView Header",
+          "page": const FlexibleListHeaderPage(),
+          "route": MyRoutes.flexibleListHeaderPage
+        },
+        {
+          "title": S.of(context).nav_intl,
+          "page": const TestLanguagePage(),
+          "route": MyRoutes.testLanguagePage
+        }
+      ];
 
   @override
   void initState() {
@@ -53,8 +65,6 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     super.initState();
 
     LeanCloudUtil.initSDK();
-
-
   }
 
   @override
@@ -66,7 +76,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomNavigationBar: bottomBar(),
+      backgroundColor: AppColors.current.bgColor,
       body: ListView.separated(
           controller: ScrollController(),
           itemBuilder: (ctx, index) {
@@ -77,7 +87,11 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 height: 70,
                 alignment: Alignment.centerLeft,
-                child: Text(data["title"].toString()),
+                color: Colors.transparent,
+                child: Text(
+                  data["title"].toString(),
+                  style: TextStyle(color: AppColors.current.primaryTextColor),
+                ),
               ),
             );
           },

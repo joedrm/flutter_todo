@@ -1,0 +1,15 @@
+{
+  "nav_tab": "Tab Pages",
+  "nav_news": "News List",
+  "nav_route": "Route Navigation And Parameter Transfer",
+  "nav_completer": "Use Completer And Compute in Flutter",
+  "nav_extension": "Chrome Extension",
+  "nav_intl": "Intl",
+  "tab_home": "Home",
+  "tab_search": "Search",
+  "tab_favor": "Favor",
+  "tab_setting": "Setting",
+  "intl_zh": "Chinese",
+  "intl_en": "English",
+  "alert_msg": "This is a alert"
+}

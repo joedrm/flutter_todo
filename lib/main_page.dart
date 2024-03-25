@@ -84,60 +84,85 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.current.bgColor,
+      backgroundColor: Colors.white,
       body: Container(
         color: Colors.white,
-        child: Stack(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ListView.separated(
-                controller: ScrollController(),
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                itemBuilder: (ctx, index) {
-                  Map<String, dynamic> data = pages[index];
-                  return GestureDetector(
-                    onTap: () => toPage(index),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      height: 70,
-                      alignment: Alignment.centerLeft,
-                      color: Colors.transparent,
-                      child: Text(
-                        data["title"].toString(),
-                        style: const TextStyle(
-                            color: Color(0xFF2131DB),
-                            decoration: TextDecoration.underline,
-                            fontSize: 16),
-                      ),
-                    ),
-                  );
-                },
-                separatorBuilder: (ctx, index) {
-                  return Container(
-                    height: 0.05,
-                    color: const Color(0xff000000),
-                  );
-                },
-                itemCount: pages.length),
-            Positioned(
-                bottom: 20,
-                right: 20,
-                child: GestureDetector(
-                  onTap: (){
-                    FluroNavigatorUtil.push(context, MyRoutes.readmePage);
-                  },
-                  child: Container(
-                    height: 38,
-                    color: const Color(0xFF2736D9),
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(horizontal: 14),
-                    child: const Text(
-                      "关于项目",
+            SizedBox(height: 20,),
+            GestureDetector(
+              onTap: (){
+                FluroNavigatorUtil.push(context, MyRoutes.readmePage);
+              },
+              child: Container(
+                color: const Color(0xFF2736D9),
+                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      "关于本项目",
                       style: TextStyle(
-                          color: Color(0xffe3e3e3),
-                          fontSize: 12),
+                          color: Color(0xffFFFFFF),
+                          fontSize: 18),
                     ),
-                  ),
-                ))
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: ListView.separated(
+                  controller: ScrollController(),
+                  itemBuilder: (ctx, index) {
+                    Map<String, dynamic> data = pages[index];
+                    return GestureDetector(
+                      onTap: () => toPage(index),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                        // height: 50,
+                        alignment: Alignment.center,
+                        color: Colors.transparent,
+                        child: Text(
+                          data["title"].toString(),
+                          style: const TextStyle(
+                              color: Color(0xFF2131DB),
+                              decoration: TextDecoration.underline,
+                              fontSize: 18),
+                        ),
+                      ),
+                    );
+                  },
+                  separatorBuilder: (ctx, index) {
+                    return Container(
+                      height: 0.05,
+                      // color: const Color(0xff666666),
+                    );
+                  },
+                  itemCount: pages.length),
+            ),
+            // Positioned(
+            //     bottom: 20,
+            //     right: 20,
+            //     child: GestureDetector(
+            //       onTap: (){
+            //         FluroNavigatorUtil.push(context, MyRoutes.readmePage);
+            //       },
+            //       child: Container(
+            //         height: 38,
+            //         color: const Color(0xFF2736D9),
+            //         alignment: Alignment.center,
+            //         padding: const EdgeInsets.symmetric(horizontal: 14),
+            //         child: const Text(
+            //           "关于项目",
+            //           style: TextStyle(
+            //               color: Color(0xffe3e3e3),
+            //               fontSize: 12),
+            //         ),
+            //       ),
+            //     ))
           ],
         ),
       ),

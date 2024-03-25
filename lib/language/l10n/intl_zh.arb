@@ -1,8 +1,8 @@
 {
-  "nav_tab": "tab 页面",
+  "nav_tab": "Tab 页面",
   "nav_news": "新闻列表",
   "nav_route": "路由导航及传参",
-  "nav_completer": "Flutter异步编程中Completer和compute的使用",
+  "nav_completer": "Flutter 异步编程中 Completer 和 compute 的使用",
   "nav_extension": "Chrome 扩展程序",
   "nav_intl": "国际化",
   "tab_home": "首页",
@@ -12,5 +12,6 @@
   "intl_zh": "中文",
   "intl_en": "英文",
   "alert": "弹框",
-  "alert_msg": "这是一个弹框"
+  "alert_msg": "这是一个弹框",
+  "ftool": "FTool: 在线工具"
 }

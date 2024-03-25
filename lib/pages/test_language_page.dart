@@ -15,6 +15,7 @@ class _TestLanguagePageState extends State<TestLanguagePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffffffff),
       body: Center(
         child: Column(
           children: [

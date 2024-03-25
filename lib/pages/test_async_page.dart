@@ -64,7 +64,7 @@ class _TestAsyncPageState extends State<TestAsyncPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(color: Color(0xffffffff),);
   }
 
   Future<int> doAction() async {

@@ -189,6 +189,16 @@ class S {
       args: [],
     );
   }
+
+  /// `FTool: App Develop Online Tools`
+  String get ftool {
+    return Intl.message(
+      'FTool: App Develop Online Tools',
+      name: 'ftool',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

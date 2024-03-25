@@ -12,9 +12,10 @@ class ChromeExtensionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffffffff),
       body: Center(
         child: MaterialButton(
-          child: const Text("下载 flutter_todo 的 Chrome 扩展程序"),
+          child: const Text("下载 flutter_todo 的 Chrome 扩展程序", style: TextStyle(color: Color(0xFF000000)),),
           onPressed: _launchUrl,
         ),
       ),

@@ -47,6 +47,7 @@ class _FlexibleListHeaderPageState extends State<FlexibleListHeaderPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xfff3f3f3),
       body: Listener(
         onPointerMove: (result) {
           updatePicHeight(result.position.dy);

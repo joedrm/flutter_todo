@@ -23,15 +23,16 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alert": MessageLookupByLibrary.simpleMessage("弹框"),
         "alert_msg": MessageLookupByLibrary.simpleMessage("这是一个弹框"),
+        "ftool": MessageLookupByLibrary.simpleMessage("FTool: 在线工具"),
         "intl_en": MessageLookupByLibrary.simpleMessage("英文"),
         "intl_zh": MessageLookupByLibrary.simpleMessage("中文"),
         "nav_completer": MessageLookupByLibrary.simpleMessage(
-            "Flutter异步编程中Completer和compute的使用"),
+            "Flutter 异步编程中 Completer 和 compute 的使用"),
         "nav_extension": MessageLookupByLibrary.simpleMessage("Chrome 扩展程序"),
         "nav_intl": MessageLookupByLibrary.simpleMessage("国际化"),
         "nav_news": MessageLookupByLibrary.simpleMessage("新闻列表"),
         "nav_route": MessageLookupByLibrary.simpleMessage("路由导航及传参"),
-        "nav_tab": MessageLookupByLibrary.simpleMessage("tab 页面"),
+        "nav_tab": MessageLookupByLibrary.simpleMessage("Tab 页面"),
         "tab_favor": MessageLookupByLibrary.simpleMessage("收藏"),
         "tab_home": MessageLookupByLibrary.simpleMessage("首页"),
         "tab_search": MessageLookupByLibrary.simpleMessage("搜索"),

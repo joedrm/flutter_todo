@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alert": MessageLookupByLibrary.simpleMessage("Alert"),
         "alert_msg": MessageLookupByLibrary.simpleMessage("This is a alert"),
+        "ftool": MessageLookupByLibrary.simpleMessage(
+            "FTool: App Develop Online Tools"),
         "intl_en": MessageLookupByLibrary.simpleMessage("English"),
         "intl_zh": MessageLookupByLibrary.simpleMessage("Chinese"),
         "nav_completer": MessageLookupByLibrary.simpleMessage(

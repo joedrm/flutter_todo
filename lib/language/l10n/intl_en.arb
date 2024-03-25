@@ -12,5 +12,6 @@
   "intl_zh": "Chinese",
   "intl_en": "English",
   "alert": "Alert",
-  "alert_msg": "This is a alert"
+  "alert_msg": "This is a alert",
+  "ftool": "FTool: App Develop Online Tools"
 }

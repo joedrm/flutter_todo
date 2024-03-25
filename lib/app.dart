@@ -9,6 +9,7 @@ import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/chrome_extension_page.dart';
 import 'package:flutter_todo/pages/flexible_list_header_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
+import 'package:flutter_todo/pages/readme_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_language_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
@@ -26,15 +27,16 @@ abstract class IRouterProvider {
 class MyRoutes {
   static FluroRouter router = FluroRouter();
   static String root = "/";
-  static String tabPage = "/tabPage";
-  static String newsPage = "/newsPage";
-  static String testRoutePage = "/testRoutePage";
-  static String secondPage = "/secondPage";
-  static String testAsyncPage = "/testAsyncPage";
-  static String chromeExtensionPage = "/chromeExtensionPage";
-  static String flexibleListHeaderPage = "/flexibleListHeaderPage";
-  static String testLanguagePage = "/testLanguagePage";
+  static String tabPage = "/tab";
+  static String newsPage = "/news";
+  static String testRoutePage = "/route";
+  static String secondPage = "/second";
+  static String testAsyncPage = "/async";
+  static String chromeExtensionPage = "/chromeExtension";
+  static String flexibleListHeaderPage = "/flexibleListHeader";
+  static String testLanguagePage = "/language";
   static String appDownloadPage = "/jianyue";
+  static String readmePage = "/readme";
 
   static void configureRoutes() {
     router.notFoundHandler = Handler(
@@ -78,6 +80,9 @@ class MyRoutes {
 
     router.define(testLanguagePage,
         handler: Handler(handlerFunc: (_, __) => const TestLanguagePage()));
+
+    router.define(readmePage,
+        handler: Handler(handlerFunc: (_, __) => const ReadmePage()));
   }
 }
 

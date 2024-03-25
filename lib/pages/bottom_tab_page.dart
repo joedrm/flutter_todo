@@ -138,6 +138,7 @@ class _BottomTabPageState extends State<BottomTabPage>
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: bottomBar(),
+      backgroundColor: const Color(0xfff3f3f3),
       body: PageView(
         controller: _pageController,
         onPageChanged: onPageChanged,

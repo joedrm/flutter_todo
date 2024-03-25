@@ -12,6 +12,7 @@ class TestRoutePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffffffff),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

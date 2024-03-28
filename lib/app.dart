@@ -132,10 +132,10 @@ class App extends StatelessWidget {
           localeResolutionCallback:
               (Locale? locale, Iterable<Locale> supportedLocales) {
             Locale currentLocale =
-            Locale.fromSubtags(languageCode: locale?.languageCode ?? "zh");
+            Locale.fromSubtags(languageCode: locale?.languageCode ?? "en");
             return supportedLocales.contains(currentLocale)
                 ? currentLocale
-                : const Locale.fromSubtags(languageCode: "zh");
+                : const Locale.fromSubtags(languageCode: "en");
           },
         );
       },

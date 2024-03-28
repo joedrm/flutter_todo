@@ -199,6 +199,16 @@ class S {
       args: [],
     );
   }
+
+  /// `About This Project`
+  String get about_project {
+    return Intl.message(
+      'About This Project',
+      name: 'about_project',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

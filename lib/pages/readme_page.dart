@@ -74,30 +74,30 @@ class _ReadmePageState extends State<ReadmePage> {
                   );
                 },
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Text(
-                "加我微信，拉进群交流",
-                style: TextStyle(color: Color(0xff010101), fontSize: 16),
-              ),
-              Image.network(
-                "https://s2.loli.net/2024/03/25/t6qMd5HU3WxLuTl.jpg",
-                fit: BoxFit.fill,
-                width: 200,
-                loadingBuilder: (BuildContext context, Widget child,
-                    ImageChunkEvent? loadingProgress) {
-                  if (loadingProgress == null) return child;
-                  return Center(
-                    child: CircularProgressIndicator(
-                      value: loadingProgress.expectedTotalBytes != null
-                          ? loadingProgress.cumulativeBytesLoaded /
-                              loadingProgress.expectedTotalBytes!
-                          : null,
-                    ),
-                  );
-                },
-              ),
+              // const SizedBox(
+              //   height: 20,
+              // ),
+              // const Text(
+              //   "加我微信，拉进群交流",
+              //   style: TextStyle(color: Color(0xff010101), fontSize: 16),
+              // ),
+              // Image.network(
+              //   "https://s2.loli.net/2024/03/25/t6qMd5HU3WxLuTl.jpg",
+              //   fit: BoxFit.fill,
+              //   width: 200,
+              //   loadingBuilder: (BuildContext context, Widget child,
+              //       ImageChunkEvent? loadingProgress) {
+              //     if (loadingProgress == null) return child;
+              //     return Center(
+              //       child: CircularProgressIndicator(
+              //         value: loadingProgress.expectedTotalBytes != null
+              //             ? loadingProgress.cumulativeBytesLoaded /
+              //                 loadingProgress.expectedTotalBytes!
+              //             : null,
+              //       ),
+              //     );
+              //   },
+              // ),
             ],
           ),
         ),

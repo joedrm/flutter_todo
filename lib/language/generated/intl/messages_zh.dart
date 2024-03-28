@@ -21,6 +21,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "about_project": MessageLookupByLibrary.simpleMessage("关于本项目"),
         "alert": MessageLookupByLibrary.simpleMessage("弹框"),
         "alert_msg": MessageLookupByLibrary.simpleMessage("这是一个弹框"),
         "ftool": MessageLookupByLibrary.simpleMessage("FTool: 在线工具"),

@@ -1,15 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
-import 'package:flutter_todo/pages/app_download/app_download_page.dart';
-import 'package:flutter_todo/pages/bottom_tab_page.dart';
-import 'package:flutter_todo/pages/chrome_extension_page.dart';
-import 'package:flutter_todo/pages/flexible_list_header_page.dart';
-import 'package:flutter_todo/pages/news_page.dart';
-import 'package:flutter_todo/pages/test_async_page.dart';
-import 'package:flutter_todo/pages/test_language_page.dart';
-import 'package:flutter_todo/pages/test_route_page.dart';
-import 'package:flutter_todo/resources/styles/app_colors.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
 import 'dart:js' as js;
@@ -102,10 +93,10 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
                 padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text(
-                      "关于本项目",
-                      style: TextStyle(
+                      S.of(context).about_project,
+                      style: const TextStyle(
                           color: Color(0xffFFFFFF),
                           fontSize: 18),
                     ),

@@ -13,5 +13,6 @@
   "intl_en": "英文",
   "alert": "弹框",
   "alert_msg": "这是一个弹框",
-  "ftool": "FTool: 在线工具"
+  "ftool": "FTool: 在线工具",
+  "about_project": "关于本项目"
 }

@@ -26,6 +26,7 @@ dependencies:
 #  chat_gpt_sdk: ^1.0.2+4
   after_layout:
   provider: ^6.1.2
+  js: ^0.6.2
 
 dev_dependencies:
   flutter_test:

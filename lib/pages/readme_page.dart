@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:js' as js;
+// import 'dart:js' as js;
+
+import 'package:flutter_todo/utils/device_utils.dart';
 
 class ReadmePage extends StatefulWidget {
   const ReadmePage({Key? key}) : super(key: key);
@@ -15,7 +17,9 @@ class _ReadmePageState extends State<ReadmePage> {
       backgroundColor: const Color(0xfff3f3f3),
       body: Center(
         child: Container(
-          width: MediaQuery.of(context).size.width * 0.5,
+          // width: Device.isWeb
+          //     ? MediaQuery.of(context).size.width * 0.5
+          //     : MediaQuery.of(context).size.width,
           padding: const EdgeInsets.symmetric(horizontal: 14),
           color: Colors.white,
           child: Column(
@@ -34,8 +38,8 @@ class _ReadmePageState extends State<ReadmePage> {
               ),
               GestureDetector(
                 onTap: () {
-                  js.context.callMethod(
-                      'open', ["https://github.com/joedrm/flutter_todo"]);
+                  // js.context.callMethod(
+                  //     'open', ["https://github.com/joedrm/flutter_todo"]);
                 },
                 child: Container(
                   height: 30,

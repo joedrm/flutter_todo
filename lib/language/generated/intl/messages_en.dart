@@ -41,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tab_favor": MessageLookupByLibrary.simpleMessage("Favor"),
         "tab_home": MessageLookupByLibrary.simpleMessage("Home"),
         "tab_search": MessageLookupByLibrary.simpleMessage("Search"),
-        "tab_setting": MessageLookupByLibrary.simpleMessage("Setting")
+        "tab_setting": MessageLookupByLibrary.simpleMessage("Setting"),
+        "tips": MessageLookupByLibrary.simpleMessage("Tips And Tricks")
       };
 }

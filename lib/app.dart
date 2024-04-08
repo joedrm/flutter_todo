@@ -7,6 +7,7 @@ import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/pages/app_download/app_download_page.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
 import 'package:flutter_todo/pages/chrome_extension_page.dart';
+import 'package:flutter_todo/pages/dart_tips_page.dart';
 import 'package:flutter_todo/pages/flexible_list_header_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/readme_page.dart';
@@ -37,6 +38,7 @@ class MyRoutes {
   static String testLanguagePage = "/language";
   static String appDownloadPage = "/jianyue";
   static String readmePage = "/readme";
+  static String dartTipsPage = '/tips';
 
   static void configureRoutes() {
     router.notFoundHandler = Handler(
@@ -83,6 +85,9 @@ class MyRoutes {
 
     router.define(readmePage,
         handler: Handler(handlerFunc: (_, __) => const ReadmePage()));
+
+    router.define(dartTipsPage,
+        handler: Handler(handlerFunc: (_, __) => const DartTipsPage()));
   }
 }
 

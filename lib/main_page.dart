@@ -3,7 +3,7 @@ import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
-import 'dart:js' as js;
+// import 'dart:js' as js;
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -55,7 +55,12 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
           "title": S.of(context).ftool,
           "type": PageType.web,
           "route": "https://ftool.nnxkcloud.com"
-        }
+        },
+        {
+          "title": S.of(context).tips,
+          "type": PageType.native,
+          "route": MyRoutes.dartTipsPage
+        },
       ];
 
   @override
@@ -83,22 +88,24 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 FluroNavigatorUtil.push(context, MyRoutes.readmePage);
               },
               child: Container(
                 color: const Color(0xFF2736D9),
-                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       S.of(context).about_project,
                       style: const TextStyle(
-                          color: Color(0xffFFFFFF),
-                          fontSize: 18),
+                          color: Color(0xffFFFFFF), fontSize: 18),
                     ),
                   ],
                 ),
@@ -112,7 +119,8 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
                     return GestureDetector(
                       onTap: () => toPage(index),
                       child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 14),
                         // height: 50,
                         alignment: Alignment.center,
                         color: Colors.transparent,
@@ -167,7 +175,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     if (pageType == PageType.native) {
       FluroNavigatorUtil.push(context, path);
     } else {
-      js.context.callMethod('open', [path]);
+      // js.context.callMethod('open', [path]);
     }
   }
 }

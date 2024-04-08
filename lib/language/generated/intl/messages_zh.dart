@@ -37,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tab_favor": MessageLookupByLibrary.simpleMessage("收藏"),
         "tab_home": MessageLookupByLibrary.simpleMessage("首页"),
         "tab_search": MessageLookupByLibrary.simpleMessage("搜索"),
-        "tab_setting": MessageLookupByLibrary.simpleMessage("设置")
+        "tab_setting": MessageLookupByLibrary.simpleMessage("设置"),
+        "tips": MessageLookupByLibrary.simpleMessage("开发小技巧")
       };
 }

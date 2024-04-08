@@ -50,7 +50,7 @@ class _DartTipsPageState extends State<DartTipsPage> {
   }
 
   _getImageAspectRatio() async {
-    Image wxIcon = Image.asset("images/wx_icon.png");
+    Image wxIcon = Image.asset("assets/images/wx_icon.png");
     var aspectRatio = await wxIcon.getAspectRatio();
     print(aspectRatio);
   }
@@ -70,7 +70,7 @@ class _DartTipsPageState extends State<DartTipsPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             existLeadingSpace: true,
             spacing: 40,
-            children: [
+            children: const [
               Text("Flutter", style: TextStyle(color: Colors.blue),),
               Text("ReactNative", style: TextStyle(color: Colors.red),),
               Text("uni-app", style: TextStyle(color: Colors.green),),

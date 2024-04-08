@@ -30,7 +30,7 @@ class _ReadmePageState extends State<ReadmePage> {
                 height: 30,
               ),
               const Text(
-                "本项目是公众号 \"Flutter 技术实践\" 系列文章里所实现的 Demo 效果。",
+                "本项目是公众号 \"Flutter技术实践\" 系列文章里所实现的 Demo 效果。",
                 style: TextStyle(color: Color(0xff010101), fontSize: 16),
               ),
               const SizedBox(

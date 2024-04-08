@@ -20,7 +20,7 @@ dependencies:
 #  image_picker: ^0.6.1+10
   url_launcher: ^6.0.10
   url_launcher_web: 2.0.6
-#  url_strategy: ^0.2.0
+  url_strategy: ^0.2.0
   flutter_hooks: ^0.15.0
   hooks_riverpod: ^0.12.1
 #  chat_gpt_sdk: ^1.0.2+4

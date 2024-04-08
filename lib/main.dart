@@ -4,6 +4,7 @@ import 'dart:isolate';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'app.dart';
 
@@ -25,6 +26,8 @@ Future<void> main() async {
     );
   }
 
+  /// 去掉 url 中的 "#"
+  setPathUrlStrategy();
   runApp(App());
 }
 

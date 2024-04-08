@@ -3,7 +3,7 @@ import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
-// import 'dart:js' as js;
+import 'dart:js' as js;
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -175,7 +175,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     if (pageType == PageType.native) {
       FluroNavigatorUtil.push(context, path);
     } else {
-      // js.context.callMethod('open', [path]);
+      js.context.callMethod('open', [path]);
     }
   }
 }

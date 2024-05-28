@@ -1,0 +1,204 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+MERGED from [:shared_preferences_android] /Users/yunxi/Downloads/flutter_todo/build/shared_preferences_android/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] /Users/yunxi/Downloads/flutter_todo/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:2:1-14:12
+MERGED from [:path_provider_android] /Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/602ce26881e3b92788ae83c190d3c36f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.browser:browser:1.5.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9abcf39de5523e9919ccecfe7d369e48/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/4be22224224533c26d0ae61c1a0883d9/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/1cbef2eb018173ec3184a5bb06b7d4c2/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/56012d1be5fde1427e12c1ed5fdf168d/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/05e43d1ab3b2e182c199f8ebbcf0b5b5/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/cb2d4a5762709c8e8ce42f85b83c7a88/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/768c895abb10a2b238ee6d9ecf974870/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/31e590e1c2b2d39bf8ef53810e892256/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/c59166aa7f2131f427d35a4e0bf574cd/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/da9612d616a5115a640cf5899e2661cc/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/e0c863cfad555ae3eb55f08ae6461542/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/7dad67d9e43751fb94796a5fccb750ed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/b8f5427fca9b1603864489f48a2d91f8/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/105ad098b7b1b3fd7184b701db6a8978/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/1b485c4a5d38193b3c81e7816d4098c0/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+	package
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:2:5-43
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:1-41:12
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:3:4-40:19
+MERGED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/c59166aa7f2131f427d35a4e0bf574cd/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/c59166aa7f2131f427d35a4e0bf574cd/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:4:9-37
+	android:icon
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:5:9-43
+activity#com.fluttertodo.flutter_todo.MainActivity
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:6:9-34:20
+	android:launchMode
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:8:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:11:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:12:13-55
+	android:configChanges
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:10:13-163
+	android:theme
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:9:13-47
+	android:name
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:7:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:17:13-20:17
+	android:resource
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:19:15-52
+	android:name
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:18:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:26:13-29:17
+	android:resource
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:28:15-61
+	android:name
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:27:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:30:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:31:17-68
+	android:name
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:32:27-74
+meta-data#flutterEmbedding
+ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:37:9-39:33
+	android:value
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:39:13-30
+	android:name
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml:38:13-44
+uses-sdk
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences_android] /Users/yunxi/Downloads/flutter_todo/build/shared_preferences_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/yunxi/Downloads/flutter_todo/build/shared_preferences_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/yunxi/Downloads/flutter_todo/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/yunxi/Downloads/flutter_todo/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/602ce26881e3b92788ae83c190d3c36f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/602ce26881e3b92788ae83c190d3c36f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.5.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.5.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9abcf39de5523e9919ccecfe7d369e48/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9abcf39de5523e9919ccecfe7d369e48/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/4be22224224533c26d0ae61c1a0883d9/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/4be22224224533c26d0ae61c1a0883d9/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/1cbef2eb018173ec3184a5bb06b7d4c2/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/1cbef2eb018173ec3184a5bb06b7d4c2/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/56012d1be5fde1427e12c1ed5fdf168d/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/56012d1be5fde1427e12c1ed5fdf168d/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/05e43d1ab3b2e182c199f8ebbcf0b5b5/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/05e43d1ab3b2e182c199f8ebbcf0b5b5/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/cb2d4a5762709c8e8ce42f85b83c7a88/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/cb2d4a5762709c8e8ce42f85b83c7a88/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/768c895abb10a2b238ee6d9ecf974870/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/768c895abb10a2b238ee6d9ecf974870/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/31e590e1c2b2d39bf8ef53810e892256/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/31e590e1c2b2d39bf8ef53810e892256/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/c59166aa7f2131f427d35a4e0bf574cd/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/c59166aa7f2131f427d35a4e0bf574cd/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/da9612d616a5115a640cf5899e2661cc/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/da9612d616a5115a640cf5899e2661cc/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/e0c863cfad555ae3eb55f08ae6461542/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/e0c863cfad555ae3eb55f08ae6461542/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/7dad67d9e43751fb94796a5fccb750ed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/7dad67d9e43751fb94796a5fccb750ed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/b8f5427fca9b1603864489f48a2d91f8/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/b8f5427fca9b1603864489f48a2d91f8/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/105ad098b7b1b3fd7184b701db6a8978/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/105ad098b7b1b3fd7184b701db6a8978/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/1b485c4a5d38193b3c81e7816d4098c0/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/1b485c4a5d38193b3c81e7816d4098c0/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yunxi/Downloads/flutter_todo/android/app/src/main/AndroidManifest.xml
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher_android] /Users/yunxi/Downloads/flutter_todo/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/9520e6f13992d2f4d96b17b856330597/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:23:9-81
+permission#com.fluttertodo.flutter_todo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:26:22-94
+uses-permission#com.fluttertodo.flutter_todo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/AndroidManifest.xml:26:22-94

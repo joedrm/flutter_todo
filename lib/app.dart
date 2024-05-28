@@ -6,15 +6,25 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/pages/app_download/app_download_page.dart';
 import 'package:flutter_todo/pages/bottom_tab_page.dart';
+import 'package:flutter_todo/pages/build_context_page.dart';
 import 'package:flutter_todo/pages/chrome_extension_page.dart';
+import 'package:flutter_todo/pages/custom_painter_page.dart';
 import 'package:flutter_todo/pages/dart_tips_page.dart';
 import 'package:flutter_todo/pages/flexible_list_header_page.dart';
+import 'package:flutter_todo/pages/generic_widget/generic_widget_page.dart';
+import 'package:flutter_todo/pages/house_price/house_pirce_index_page.dart';
+import 'package:flutter_todo/pages/inherited_widget_test_page.dart';
 import 'package:flutter_todo/pages/news_page.dart';
 import 'package:flutter_todo/pages/readme_page.dart';
+import 'package:flutter_todo/pages/scroll_menu_page.dart';
+import 'package:flutter_todo/pages/smart_home/smart_home_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_language_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
 import 'package:flutter_todo/providers/app_language_provider.dart';
+import 'package:flutter_todo/resources/app_colors_theme.dart';
+import 'package:flutter_todo/resources/app_dimensions_theme.dart';
+import 'package:flutter_todo/resources/app_texts_theme.dart';
 import 'package:flutter_todo/resources/styles/app_colors.dart';
 import 'package:flutter_todo/resources/styles/app_themes.dart';
 import 'package:provider/provider.dart';
@@ -39,6 +49,13 @@ class MyRoutes {
   static String appDownloadPage = "/jianyue";
   static String readmePage = "/readme";
   static String dartTipsPage = '/tips';
+  static String scrollMenuPage = "/scrollMenu";
+  static String housePriceIndexPage = "/housePriceIndex";
+  static String customPainter = "/customPainter";
+  static String buildContext = "/buildContext";
+  static String smartHome = "/smartHome";
+  static String inheritedWidget = "inheritedWidget";
+  static String genericWidgetPage = 'genericWidgetPage';
 
   static void configureRoutes() {
     router.notFoundHandler = Handler(
@@ -88,6 +105,34 @@ class MyRoutes {
 
     router.define(dartTipsPage,
         handler: Handler(handlerFunc: (_, __) => const DartTipsPage()));
+
+    router.define(scrollMenuPage,
+        handler: Handler(handlerFunc: (_, __) => const ScrollMenuPage()));
+
+    router.define(housePriceIndexPage,
+        handler: Handler(handlerFunc: (_, __) => const HousePriceIndexPage()));
+
+    router.define(customPainter,
+        handler:
+            Handler(handlerFunc: (_, __) => const CustomPainterPagePage()));
+
+    router.define(buildContext,
+        handler: Handler(handlerFunc: (_, __) => const BuildContextPage()));
+
+    router.define(smartHome,
+        handler: Handler(handlerFunc: (_, __) => const SmartHomePage()));
+
+    router.define(inheritedWidget,
+        handler:
+            Handler(handlerFunc: (_, __) => const InheritedWidgetTestPage()));
+
+    router.define(genericWidgetPage,
+        handler: Handler(
+            handlerFunc: (
+          BuildContext? context,
+          Map<String, List<String>> parameters,
+        ) =>
+                const GenericWidgetPage()));
   }
 }
 
@@ -107,9 +152,7 @@ class App extends StatelessWidget {
 
     AppColors.of(context);
 
-
-
-   return MultiProvider(
+    return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) {
           return AppLanguageProvider();
@@ -120,9 +163,39 @@ class App extends StatelessWidget {
             context.watch<AppLanguageProvider>().languageCode;
         return MaterialApp(
           title: 'Flutter 技术实践',
+          // theme: Theme.of(context).copyWith(
+          //   extensions: [
+          //     // AppDimensionsTheme.main(),
+          //     AppColorsTheme.light(),
+          //     AppTextsTheme.main(),
+          //   ],
+          // ),
           theme: lightTheme,
           darkTheme: darkTheme,
+          // theme: ThemeData(
+          //   // 设置主色为蓝色
+          //   primaryColor: Colors.blue,
+          //   // 设置默认字体为Roboto
+          //   fontFamily: 'Roboto',
+          //   // 设置默认文本样式
+          //   textTheme: const TextTheme(
+          //     // 设置标题文本样式
+          //     displayMedium:
+          //     TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          //     // 设置正文文本样式
+          //     bodyMedium: TextStyle(fontSize: 16),
+          //   ),
+          //   // 设置按钮的样式
+          //   buttonTheme: ButtonThemeData(
+          //     buttonColor: Colors.blue, // 按钮颜色
+          //     shape: RoundedRectangleBorder(
+          //       borderRadius: BorderRadius.circular(8), // 圆角半径
+          //     ),
+          //     textTheme: ButtonTextTheme.primary, // 按钮文本颜色
+          //   ),
+          // ),
           themeMode: ThemeMode.system,
+          // key: locator<NavigationService>().navigatorKey,
           onGenerateRoute: MyRoutes.router.generator,
           initialRoute: MyRoutes.root,
           debugShowCheckedModeBanner: false,
@@ -137,7 +210,7 @@ class App extends StatelessWidget {
           localeResolutionCallback:
               (Locale? locale, Iterable<Locale> supportedLocales) {
             Locale currentLocale =
-            Locale.fromSubtags(languageCode: locale?.languageCode ?? "en");
+                Locale.fromSubtags(languageCode: locale?.languageCode ?? "en");
             return supportedLocales.contains(currentLocale)
                 ? currentLocale
                 : const Locale.fromSubtags(languageCode: "en");

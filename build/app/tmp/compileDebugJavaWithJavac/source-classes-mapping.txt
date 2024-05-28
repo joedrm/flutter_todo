@@ -1,0 +1,150 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+androidx/tracing/R.java
+ androidx.tracing.R
+io/flutter/plugins/pathprovider/R.java
+ io.flutter.plugins.pathprovider.R
+ io.flutter.plugins.pathprovider.R$attr
+ io.flutter.plugins.pathprovider.R$color
+ io.flutter.plugins.pathprovider.R$dimen
+ io.flutter.plugins.pathprovider.R$drawable
+ io.flutter.plugins.pathprovider.R$id
+ io.flutter.plugins.pathprovider.R$integer
+ io.flutter.plugins.pathprovider.R$layout
+ io.flutter.plugins.pathprovider.R$string
+ io.flutter.plugins.pathprovider.R$style
+ io.flutter.plugins.pathprovider.R$styleable
+androidx/window/R.java
+ androidx.window.R
+ androidx.window.R$attr
+ androidx.window.R$id
+ androidx.window.R$styleable
+io/flutter/plugins/sharedpreferences/R.java
+ io.flutter.plugins.sharedpreferences.R
+ io.flutter.plugins.sharedpreferences.R$attr
+ io.flutter.plugins.sharedpreferences.R$color
+ io.flutter.plugins.sharedpreferences.R$dimen
+ io.flutter.plugins.sharedpreferences.R$drawable
+ io.flutter.plugins.sharedpreferences.R$id
+ io.flutter.plugins.sharedpreferences.R$integer
+ io.flutter.plugins.sharedpreferences.R$layout
+ io.flutter.plugins.sharedpreferences.R$string
+ io.flutter.plugins.sharedpreferences.R$style
+ io.flutter.plugins.sharedpreferences.R$styleable
+androidx/activity/R.java
+ androidx.activity.R
+ androidx.activity.R$attr
+ androidx.activity.R$color
+ androidx.activity.R$dimen
+ androidx.activity.R$drawable
+ androidx.activity.R$id
+ androidx.activity.R$integer
+ androidx.activity.R$layout
+ androidx.activity.R$string
+ androidx.activity.R$style
+ androidx.activity.R$styleable
+androidx/lifecycle/livedata/core/R.java
+ androidx.lifecycle.livedata.core.R
+androidx/lifecycle/livedata/R.java
+ androidx.lifecycle.livedata.R
+androidx/lifecycle/R.java
+ androidx.lifecycle.R
+androidx/arch/core/R.java
+ androidx.arch.core.R
+androidx/versionedparcelable/R.java
+ androidx.versionedparcelable.R
+androidx/viewpager/R.java
+ androidx.viewpager.R
+ androidx.viewpager.R$attr
+ androidx.viewpager.R$color
+ androidx.viewpager.R$dimen
+ androidx.viewpager.R$drawable
+ androidx.viewpager.R$id
+ androidx.viewpager.R$integer
+ androidx.viewpager.R$layout
+ androidx.viewpager.R$string
+ androidx.viewpager.R$style
+ androidx.viewpager.R$styleable
+androidx/fragment/R.java
+ androidx.fragment.R
+ androidx.fragment.R$attr
+ androidx.fragment.R$color
+ androidx.fragment.R$dimen
+ androidx.fragment.R$drawable
+ androidx.fragment.R$id
+ androidx.fragment.R$integer
+ androidx.fragment.R$layout
+ androidx.fragment.R$string
+ androidx.fragment.R$style
+ androidx.fragment.R$styleable
+androidx/savedstate/R.java
+ androidx.savedstate.R
+androidx/customview/R.java
+ androidx.customview.R
+ androidx.customview.R$attr
+ androidx.customview.R$color
+ androidx.customview.R$dimen
+ androidx.customview.R$drawable
+ androidx.customview.R$id
+ androidx.customview.R$integer
+ androidx.customview.R$layout
+ androidx.customview.R$string
+ androidx.customview.R$style
+ androidx.customview.R$styleable
+androidx/window/java/R.java
+ androidx.window.java.R
+com/fluttertodo/flutter_todo/BuildConfig.java
+ com.fluttertodo.flutter_todo.BuildConfig
+androidx/loader/R.java
+ androidx.loader.R
+ androidx.loader.R$attr
+ androidx.loader.R$color
+ androidx.loader.R$dimen
+ androidx.loader.R$drawable
+ androidx.loader.R$id
+ androidx.loader.R$integer
+ androidx.loader.R$layout
+ androidx.loader.R$string
+ androidx.loader.R$style
+ androidx.loader.R$styleable
+androidx/lifecycle/viewmodel/R.java
+ androidx.lifecycle.viewmodel.R
+androidx/annotation/experimental/R.java
+ androidx.annotation.experimental.R
+com/tekartik/sqflite/R.java
+ com.tekartik.sqflite.R
+ com.tekartik.sqflite.R$attr
+ com.tekartik.sqflite.R$color
+ com.tekartik.sqflite.R$dimen
+ com.tekartik.sqflite.R$drawable
+ com.tekartik.sqflite.R$id
+ com.tekartik.sqflite.R$integer
+ com.tekartik.sqflite.R$layout
+ com.tekartik.sqflite.R$string
+ com.tekartik.sqflite.R$style
+ com.tekartik.sqflite.R$styleable
+com/fluttertodo/flutter_todo/R.java
+ com.fluttertodo.flutter_todo.R
+ com.fluttertodo.flutter_todo.R$attr
+ com.fluttertodo.flutter_todo.R$color
+ com.fluttertodo.flutter_todo.R$dimen
+ com.fluttertodo.flutter_todo.R$drawable
+ com.fluttertodo.flutter_todo.R$id
+ com.fluttertodo.flutter_todo.R$integer
+ com.fluttertodo.flutter_todo.R$layout
+ com.fluttertodo.flutter_todo.R$mipmap
+ com.fluttertodo.flutter_todo.R$string
+ com.fluttertodo.flutter_todo.R$style
+ com.fluttertodo.flutter_todo.R$styleable
+androidx/core/R.java
+ androidx.core.R
+ androidx.core.R$attr
+ androidx.core.R$color
+ androidx.core.R$dimen
+ androidx.core.R$drawable
+ androidx.core.R$id
+ androidx.core.R$integer
+ androidx.core.R$layout
+ androidx.core.R$string
+ androidx.core.R$style
+ androidx.core.R$styleable

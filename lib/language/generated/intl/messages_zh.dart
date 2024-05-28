@@ -24,7 +24,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "about_project": MessageLookupByLibrary.simpleMessage("关于本项目"),
         "alert": MessageLookupByLibrary.simpleMessage("弹框"),
         "alert_msg": MessageLookupByLibrary.simpleMessage("这是一个弹框"),
+        "custom_painter": MessageLookupByLibrary.simpleMessage("自定义绘制"),
         "ftool": MessageLookupByLibrary.simpleMessage("FTool: 在线工具"),
+        "generic_widget": MessageLookupByLibrary.simpleMessage("通用的 Widget"),
+        "house_price_index": MessageLookupByLibrary.simpleMessage("房价指数"),
         "intl_en": MessageLookupByLibrary.simpleMessage("英文"),
         "intl_zh": MessageLookupByLibrary.simpleMessage("中文"),
         "nav_completer": MessageLookupByLibrary.simpleMessage(
@@ -34,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nav_news": MessageLookupByLibrary.simpleMessage("新闻列表"),
         "nav_route": MessageLookupByLibrary.simpleMessage("路由导航及传参"),
         "nav_tab": MessageLookupByLibrary.simpleMessage("Tab 页面"),
+        "scroll_menu": MessageLookupByLibrary.simpleMessage("滚动菜单"),
         "tab_favor": MessageLookupByLibrary.simpleMessage("收藏"),
         "tab_home": MessageLookupByLibrary.simpleMessage("首页"),
         "tab_search": MessageLookupByLibrary.simpleMessage("搜索"),

@@ -15,5 +15,9 @@
   "alert_msg": "This is a alert",
   "ftool": "FTool: App Develop Online Tools",
   "about_project": "About This Project",
-  "tips": "Tips And Tricks"
+  "tips": "Tips And Tricks",
+  "scroll_menu": "Scroll Menu",
+  "house_price_index": "House Price Index",
+  "custom_painter": "Custom Painter",
+  "generic_widget": "Generic Widget"
 }

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-tl/values-tl.xml",
+            "map": [
+                {
+                    "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/values-tl/values-tl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,355,452,559,667,789",
+                        "endColumns": "96,101,100,96,106,107,121,100",
+                        "endOffsets": "147,249,350,447,554,662,784,885"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,13",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,355,452,559,667,1213",
+                        "endColumns": "96,101,100,96,106,107,121,100",
+                        "endOffsets": "147,249,350,447,554,662,784,1309"
+                    }
+                },
+                {
+                    "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/res/values-tl/values-tl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,158,263,374",
+                        "endColumns": "102,104,110,104",
+                        "endOffsets": "153,258,369,474"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "789,892,997,1108",
+                        "endColumns": "102,104,110,104",
+                        "endOffsets": "887,992,1103,1208"
+                    }
+                }
+            ]
+        }
+    ]
+}

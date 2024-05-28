@@ -15,5 +15,9 @@
   "alert_msg": "这是一个弹框",
   "ftool": "FTool: 在线工具",
   "about_project": "关于本项目",
-  "tips": "开发小技巧"
+  "tips": "开发小技巧",
+  "scroll_menu": "滚动菜单",
+  "house_price_index": "房价指数",
+  "custom_painter": "自定义绘制",
+  "generic_widget": "通用的 Widget"
 }

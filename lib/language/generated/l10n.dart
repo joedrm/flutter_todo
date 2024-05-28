@@ -219,6 +219,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Scroll Menu`
+  String get scroll_menu {
+    return Intl.message(
+      'Scroll Menu',
+      name: 'scroll_menu',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `House Price Index`
+  String get house_price_index {
+    return Intl.message(
+      'House Price Index',
+      name: 'house_price_index',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Custom Painter`
+  String get custom_painter {
+    return Intl.message(
+      'Custom Painter',
+      name: 'custom_painter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Generic Widget`
+  String get generic_widget {
+    return Intl.message(
+      'Generic Widget',
+      name: 'generic_widget',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

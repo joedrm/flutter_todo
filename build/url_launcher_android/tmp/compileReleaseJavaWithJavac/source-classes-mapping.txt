@@ -1,0 +1,20 @@
+io/flutter/plugins/urllauncher/BuildConfig.java
+ io.flutter.plugins.urllauncher.BuildConfig
+io/flutter/plugins/urllauncher/UrlLauncher.java
+ io.flutter.plugins.urllauncher.UrlLauncher
+ io.flutter.plugins.urllauncher.UrlLauncher$IntentResolver
+io/flutter/plugins/urllauncher/WebViewActivity.java
+ io.flutter.plugins.urllauncher.WebViewActivity
+ io.flutter.plugins.urllauncher.WebViewActivity$1
+ io.flutter.plugins.urllauncher.WebViewActivity$2
+ io.flutter.plugins.urllauncher.WebViewActivity$FlutterWebChromeClient
+ io.flutter.plugins.urllauncher.WebViewActivity$FlutterWebChromeClient$1
+io/flutter/plugins/urllauncher/UrlLauncherPlugin.java
+ io.flutter.plugins.urllauncher.UrlLauncherPlugin
+io/flutter/plugins/urllauncher/Messages.java
+ io.flutter.plugins.urllauncher.Messages
+ io.flutter.plugins.urllauncher.Messages$FlutterError
+ io.flutter.plugins.urllauncher.Messages$UrlLauncherApi
+ io.flutter.plugins.urllauncher.Messages$UrlLauncherApiCodec
+ io.flutter.plugins.urllauncher.Messages$WebViewOptions
+ io.flutter.plugins.urllauncher.Messages$WebViewOptions$Builder

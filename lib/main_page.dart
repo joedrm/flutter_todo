@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo/app.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
+import 'package:flutter_todo/resources/app_colors_theme.dart';
+import 'package:flutter_todo/resources/theme_data_extension.dart';
 import 'package:flutter_todo/utils/fluro_navigator_util.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
-import 'dart:js' as js;
+// import 'dart:js' as js;
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -12,54 +14,38 @@ class MainPage extends StatefulWidget {
   _MainPageState createState() => _MainPageState();
 }
 
-enum PageType { native, web }
-
 class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
   List<Map<String, dynamic>> get pages => [
-        {
-          "title": S.of(context).nav_tab,
-          "type": PageType.native,
-          "route": MyRoutes.tabPage
-        },
-        {
-          "title": S.of(context).nav_news,
-          "type": PageType.native,
-          "route": MyRoutes.newsPage
-        },
-        {
-          "title": S.of(context).nav_route,
-          "type": PageType.native,
-          "route": MyRoutes.testRoutePage
-        },
-        {
-          "title": S.of(context).nav_completer,
-          "type": PageType.native,
-          "route": MyRoutes.testAsyncPage
-        },
+        {"title": S.of(context).nav_tab, "route": MyRoutes.tabPage},
+        {"title": S.of(context).nav_news, "route": MyRoutes.newsPage},
+        {"title": S.of(context).nav_route, "route": MyRoutes.testRoutePage},
+        {"title": S.of(context).nav_completer, "route": MyRoutes.testAsyncPage},
         {
           "title": S.of(context).nav_extension,
-          "type": PageType.native,
           "route": MyRoutes.chromeExtensionPage
         },
         {
           "title": "Flexible ListView Header",
-          "type": PageType.native,
           "route": MyRoutes.flexibleListHeaderPage
         },
+        {"title": S.of(context).nav_intl, "route": MyRoutes.testLanguagePage},
+        {"title": S.of(context).ftool, "route": "https://ftool.nnxkcloud.com"},
+        {"title": S.of(context).tips, "route": MyRoutes.dartTipsPage},
         {
-          "title": S.of(context).nav_intl,
-          "type": PageType.native,
-          "route": MyRoutes.testLanguagePage
+          "title": S.of(context).custom_painter,
+          "route": MyRoutes.customPainter
         },
+        {"title": "BuildContext", "route": MyRoutes.buildContext},
+        {"title": "InheritedWidget", "route": MyRoutes.inheritedWidget},
         {
-          "title": S.of(context).ftool,
-          "type": PageType.web,
-          "route": "https://ftool.nnxkcloud.com"
+          "title": S.of(context).generic_widget,
+          "route": MyRoutes.genericWidgetPage
         },
+
+        // {"title": S.of(context).scroll_menu, "route": MyRoutes.scrollMenuPage},
         {
-          "title": S.of(context).tips,
-          "type": PageType.native,
-          "route": MyRoutes.dartTipsPage
+          "title": S.of(context).house_price_index,
+          "route": MyRoutes.housePriceIndexPage
         },
       ];
 
@@ -79,6 +65,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    // final AppColorsTheme myColors = Theme.of(context).extension<AppColorsTheme>()!;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -88,7 +75,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             GestureDetector(
@@ -170,12 +157,11 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 
   toPage(int index) {
     Map<String, dynamic> data = pages[index];
-    PageType pageType = data["type"];
     String path = data["route"];
-    if (pageType == PageType.native) {
-      FluroNavigatorUtil.push(context, path);
+    if (path.contains("https") || path.contains("http")) {
+      // js.context.callMethod('open', [path]);
     } else {
-      js.context.callMethod('open', [path]);
+      FluroNavigatorUtil.push(context, path);
     }
   }
 }

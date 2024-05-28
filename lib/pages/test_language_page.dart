@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_todo/helper/AppLocalizations.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/providers/app_language_provider.dart';
 import 'package:provider/provider.dart';
@@ -28,11 +29,13 @@ class _TestLanguagePageState extends State<TestLanguagePage> {
                   height: 40,
                   color: Colors.blueAccent,
                   child: Center(
-                    child: Text(
-                      S.of(context).intl_zh,
-                      style: const TextStyle(
-                          color: Color(0xFFffffff), fontSize: 22),
-                    ),
+                    child:
+                    Text(AppLocalizations.of(context)!.translate('intl_zh')),
+                    // Text(
+                    //   S.of(context).intl_zh,
+                    //   style: const TextStyle(
+                    //       color: Color(0xFFffffff), fontSize: 22),
+                    // ),
                   ),
                 ),
                 onPressed: () {

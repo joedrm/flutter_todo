@@ -1,4 +1,4 @@
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class UrlLauncherUtil {
   static openWXArticle(String query) async {
@@ -14,10 +14,10 @@ class UrlLauncherUtil {
   }
 
   static launchURL(Uri uri) async {
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    } else {
-      // throw 'Could not launch $uri';
-    }
+    // if (await canLaunchUrl(uri)) {
+    //   await launchUrl(uri);
+    // } else {
+    //   // throw 'Could not launch $uri';
+    // }
   }
 }

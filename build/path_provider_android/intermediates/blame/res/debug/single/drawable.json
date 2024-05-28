@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/5ab6a452417d21fbbf752398b14d8405/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/5ab6a452417d21fbbf752398b14d8405/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/5ab6a452417d21fbbf752398b14d8405/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/5ab6a452417d21fbbf752398b14d8405/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    }
+]

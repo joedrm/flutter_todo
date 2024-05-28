@@ -1,0 +1,53 @@
+com/tekartik/sqflite/BuildConfig.java
+ com.tekartik.sqflite.BuildConfig
+com/tekartik/sqflite/operation/Operation.java
+ com.tekartik.sqflite.operation.Operation
+com/tekartik/sqflite/LocaleUtils.java
+ com.tekartik.sqflite.LocaleUtils
+com/tekartik/sqflite/operation/BaseReadOperation.java
+ com.tekartik.sqflite.operation.BaseReadOperation
+com/tekartik/sqflite/operation/OperationRunnable.java
+ com.tekartik.sqflite.operation.OperationRunnable
+com/tekartik/sqflite/Database.java
+ com.tekartik.sqflite.Database
+ com.tekartik.sqflite.Database$1
+com/tekartik/sqflite/operation/MethodCallOperation.java
+ com.tekartik.sqflite.operation.MethodCallOperation
+ com.tekartik.sqflite.operation.MethodCallOperation$Result
+com/tekartik/sqflite/SqflitePlugin.java
+ com.tekartik.sqflite.SqflitePlugin
+ com.tekartik.sqflite.SqflitePlugin$1
+ com.tekartik.sqflite.SqflitePlugin$2
+com/tekartik/sqflite/operation/OperationResult.java
+ com.tekartik.sqflite.operation.OperationResult
+com/tekartik/sqflite/LogLevel.java
+ com.tekartik.sqflite.LogLevel
+com/tekartik/sqflite/Constant.java
+ com.tekartik.sqflite.Constant
+com/tekartik/sqflite/operation/BatchOperation.java
+ com.tekartik.sqflite.operation.BatchOperation
+ com.tekartik.sqflite.operation.BatchOperation$BatchOperationResult
+com/tekartik/sqflite/DatabaseWorkerPool.java
+ com.tekartik.sqflite.DatabaseWorkerPool
+ com.tekartik.sqflite.DatabaseWorkerPool$1
+ com.tekartik.sqflite.DatabaseWorkerPoolImpl
+ com.tekartik.sqflite.SingleDatabaseWorkerPoolImpl
+com/tekartik/sqflite/SqlCommand.java
+ com.tekartik.sqflite.SqlCommand
+com/tekartik/sqflite/operation/BaseOperation.java
+ com.tekartik.sqflite.operation.BaseOperation
+com/tekartik/sqflite/Utils.java
+ com.tekartik.sqflite.Utils
+com/tekartik/sqflite/DatabaseTask.java
+ com.tekartik.sqflite.DatabaseDelegate
+ com.tekartik.sqflite.DatabaseTask
+com/tekartik/sqflite/dev/Debug.java
+ com.tekartik.sqflite.dev.Debug
+com/tekartik/sqflite/SqfliteCursor.java
+ com.tekartik.sqflite.SqfliteCursor
+com/tekartik/sqflite/operation/QueuedOperation.java
+ com.tekartik.sqflite.operation.QueuedOperation
+com/tekartik/sqflite/operation/SqlErrorInfo.java
+ com.tekartik.sqflite.operation.SqlErrorInfo
+com/tekartik/sqflite/DatabaseWorker.java
+ com.tekartik.sqflite.DatabaseWorker

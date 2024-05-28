@@ -1,0 +1,314 @@
+[
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-ldpi-v4_ic_call_answer_video.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-ldpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-ldpi-v4_ic_call_decline.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-ldpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-ldpi-v4_ic_call_answer_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-ldpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxhdpi-v4_ic_call_decline_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxhdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxhdpi-v4_ic_call_decline.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxhdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_ic_call_answer_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout_browser_actions_context_menu_page.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxhdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxhdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxhdpi-v4_ic_call_answer_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxhdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_ic_call_answer_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_call_answer_video.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxxhdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/xml_image_share_filepaths.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/res/xml/image_share_filepaths.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_ic_call_decline_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/yunxi/Downloads/flutter_todo/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout-v21_notification_action.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-ldpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-ldpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_ic_call_answer_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_ic_call_answer_video.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout_notification_template_part_time.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-anydpi-v21_ic_call_decline_low.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-anydpi-v21/ic_call_decline_low.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_call_decline.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxxhdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/yunxi/Downloads/flutter_todo/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable_notification_bg.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_call_decline_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxxhdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_ic_call_decline.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_ic_call_answer.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable_notification_icon_background.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_ic_call_decline.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/yunxi/Downloads/flutter_todo/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/yunxi/Downloads/flutter_todo/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_ic_call_answer.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_ic_call_answer.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-ldpi-v4_ic_call_decline_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-ldpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable_notification_tile_bg.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-anydpi-v21_ic_call_answer_video.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-anydpi-v21/ic_call_answer_video.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxhdpi-v4_ic_call_answer.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxhdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable_notification_bg_low.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-anydpi-v21_ic_call_answer_low.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-anydpi-v21/ic_call_answer_low.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_ic_call_decline_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxhdpi-v4_ic_call_answer_video.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxhdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-anydpi-v21_ic_call_decline.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-anydpi-v21/ic_call_decline.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout_custom_dialog.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/yunxi/Downloads/flutter_todo/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-v21_launch_background.xml.flat",
+        "source": "/Users/yunxi/Downloads/flutter_todo/android/app/src/main/res/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-anydpi-v21_ic_call_answer.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-anydpi-v21/ic_call_answer.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-anydpi-v21_ic_call_answer_video_low.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-anydpi-v21/ic_call_answer_video_low.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_ic_call_decline_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/ic_call_decline_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_ic_call_answer_video.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_call_answer_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxxhdpi-v4/ic_call_answer_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/layout_browser_actions_context_menu_row.xml.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/a8a3b7df7a7fae8ebb34c43ab4c36599/browser-1.5.0/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xhdpi-v4_ic_call_answer_video.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xhdpi-v4/ic_call_answer_video.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_call_answer_video_low.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxxhdpi-v4/ic_call_answer_video_low.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_call_answer.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-xxxhdpi-v4/ic_call_answer.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-mdpi-v4_ic_call_decline.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-mdpi-v4/ic_call_decline.png"
+    },
+    {
+        "merged": "/Users/yunxi/Downloads/flutter_todo/build/app/intermediates/res/merged/release/drawable-ldpi-v4_ic_call_answer.png.flat",
+        "source": "/Users/yunxi/.gradle/caches/transforms-2/files-2.1/905822a895a1b4b7c34f693fd698c54a/core-1.10.1/res/drawable-ldpi-v4/ic_call_answer.png"
+    }
+]

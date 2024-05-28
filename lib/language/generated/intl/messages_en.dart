@@ -25,8 +25,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("About This Project"),
         "alert": MessageLookupByLibrary.simpleMessage("Alert"),
         "alert_msg": MessageLookupByLibrary.simpleMessage("This is a alert"),
+        "custom_painter":
+            MessageLookupByLibrary.simpleMessage("Custom Painter"),
         "ftool": MessageLookupByLibrary.simpleMessage(
             "FTool: App Develop Online Tools"),
+        "generic_widget":
+            MessageLookupByLibrary.simpleMessage("Generic Widget"),
+        "house_price_index":
+            MessageLookupByLibrary.simpleMessage("House Price Index"),
         "intl_en": MessageLookupByLibrary.simpleMessage("English"),
         "intl_zh": MessageLookupByLibrary.simpleMessage("Chinese"),
         "nav_completer": MessageLookupByLibrary.simpleMessage(
@@ -38,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nav_route": MessageLookupByLibrary.simpleMessage(
             "Route Navigation And Parameter Transfer"),
         "nav_tab": MessageLookupByLibrary.simpleMessage("Tab Pages"),
+        "scroll_menu": MessageLookupByLibrary.simpleMessage("Scroll Menu"),
         "tab_favor": MessageLookupByLibrary.simpleMessage("Favor"),
         "tab_home": MessageLookupByLibrary.simpleMessage("Home"),
         "tab_search": MessageLookupByLibrary.simpleMessage("Search"),

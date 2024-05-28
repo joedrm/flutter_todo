@@ -58,10 +58,9 @@ class _DartTipsPageState extends State<DartTipsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffffffff),
+      backgroundColor: "767676".htmlColorToColor(),
       body: Center(
-        child:
-        Container(
+        child: Container(
           color: Colors.yellow,
           height: 100,
           width: 340,
@@ -71,9 +70,18 @@ class _DartTipsPageState extends State<DartTipsPage> {
             existLeadingSpace: true,
             spacing: 40,
             children: const [
-              Text("Flutter", style: TextStyle(color: Colors.blue),),
-              Text("ReactNative", style: TextStyle(color: Colors.red),),
-              Text("uni-app", style: TextStyle(color: Colors.green),),
+              Text(
+                "Flutter",
+                style: TextStyle(color: Colors.blue),
+              ),
+              Text(
+                "ReactNative",
+                style: TextStyle(color: Colors.red),
+              ),
+              Text(
+                "uni-app",
+                style: TextStyle(color: Colors.green),
+              ),
             ],
           ),
         ),
@@ -81,10 +89,40 @@ class _DartTipsPageState extends State<DartTipsPage> {
     );
   }
 
-
   _click() {
     print("delayedCall");
+    int.parse("666");
   }
+}
+
+extension RemoveAll on String {
+  String removeAll(Iterable<String> values) => values.fold(
+      this,
+      (
+        String result,
+        String pattern,
+      ) =>
+          result.replaceAll(pattern, ''));
+}
+
+class ColorUtil {
+  static Color hex16ToColor(String hex){
+    return Color(
+      int.parse(
+        hex.removeAll(['0x', '#']).padLeft(8, 'ff'),
+        radix: 16,
+      ),
+    );
+  }
+}
+
+extension AsHtmlColorToColor on String {
+  Color htmlColorToColor() => Color(
+        int.parse(
+          removeAll(['0x', '#']).padLeft(8, 'ff'),
+          radix: 16,
+        ),
+      );
 }
 
 extension StringExtensions on String {
@@ -103,4 +141,25 @@ extension on VoidCallback {
       Future<void>.delayed(duration, this);
 }
 
+extension FlatThen<E> on Future<Iterable<E>> {
+  Future<Iterable<R>> flatThen<R>(R Function(E) mapper) =>
+      then((iterable) => iterable.map(mapper));
+}
 
+Future<Iterable<String>> getNames() => Future.delayed(
+      const Duration(seconds: 2),
+      () => ['Flutter', 'ReactNative', 'uni-app'],
+    );
+
+Future<Iterable<int>> getNameLengthsWithoutFlatThen() => getNames().then(
+      (names) => names.map((name) => name.length),
+    );
+
+Future<Iterable<int>> getNameLengths() => getNames().flatThen(
+      (name) => name.length,
+    );
+
+Future<void> testIt() async {
+  print((await getNameLengthsWithoutFlatThen()));
+  print(await getNameLengths());
+}

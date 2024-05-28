@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:js' as js;
+// import 'dart:js' as js;
 
 import 'package:flutter_todo/utils/device_utils.dart';
 
@@ -38,8 +38,8 @@ class _ReadmePageState extends State<ReadmePage> {
               ),
               GestureDetector(
                 onTap: () {
-                  js.context.callMethod(
-                      'open', ["https://github.com/joedrm/flutter_todo"]);
+                  // js.context.callMethod(
+                  //     'open', ["https://github.com/joedrm/flutter_todo"]);
                 },
                 child: Container(
                   height: 30,

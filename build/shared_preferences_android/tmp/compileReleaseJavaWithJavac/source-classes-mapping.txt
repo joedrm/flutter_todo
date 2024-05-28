@@ -1,0 +1,11 @@
+io/flutter/plugins/sharedpreferences/Messages.java
+ io.flutter.plugins.sharedpreferences.Messages
+ io.flutter.plugins.sharedpreferences.Messages$FlutterError
+ io.flutter.plugins.sharedpreferences.Messages$SharedPreferencesApi
+io/flutter/plugins/sharedpreferences/BuildConfig.java
+ io.flutter.plugins.sharedpreferences.BuildConfig
+io/flutter/plugins/sharedpreferences/SharedPreferencesListEncoder.java
+ io.flutter.plugins.sharedpreferences.SharedPreferencesListEncoder
+io/flutter/plugins/sharedpreferences/SharedPreferencesPlugin.java
+ io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin
+ io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin$ListEncoder

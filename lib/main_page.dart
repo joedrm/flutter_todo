@@ -47,6 +47,8 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
           "title": S.of(context).house_price_index,
           "route": MyRoutes.housePriceIndexPage
         },
+        {"title": 'TextField Attention', "route": MyRoutes.textFieldPage},
+        {"title": 'Good List', "route": MyRoutes.goodListPage},
       ];
 
   @override
@@ -62,6 +64,8 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     // TODO: implement dispose
     super.dispose();
   }
+
+  final GlobalKey _key = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -81,11 +85,13 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
             GestureDetector(
               onTap: () {
                 FluroNavigatorUtil.push(context, MyRoutes.readmePage);
+                // _showFloatingButton();
               },
               child: Container(
                 color: const Color(0xFF2736D9),
                 padding:
                     const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+                key: _key,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -162,6 +168,30 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       // js.context.callMethod('open', [path]);
     } else {
       FluroNavigatorUtil.push(context, path);
+    }
+  }
+
+  OverlayEntry? _entry;
+
+  void _showFloatingButton() {
+    // final overlay = Overlay.of(context).context.findRenderObject();
+    if (_entry == null) {
+      _entry = OverlayEntry(
+        builder: (context) => Positioned(
+          // bottom: 50,
+          // right: 50,
+          top: 50,
+          left: 20,
+          child: FloatingActionButton(
+              onPressed: () {
+                _entry?.remove();
+                _entry = null;
+              },
+              child: const Icon(Icons.add)),
+        ),
+      );
+
+      Overlay.of(context).insert(_entry!);
     }
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/pages/favorite/favorite_page.dart';
 import 'package:flutter_todo/pages/home/home_page.dart';
-import 'package:flutter_todo/pages/search/search_page.dart';
+// import 'package:flutter_todo/pages/search/search_page.dart';
 import 'package:flutter_todo/pages/setting/setting_page.dart';
 import 'package:flutter_todo/resources/styles/app_colors.dart';
 
@@ -26,7 +26,7 @@ class _BottomTabPageState extends State<BottomTabPage>
     super.initState();
     pages = [
       const HomePage(),
-      const SearchPage(),
+      // const SearchPage(),
       const FavoritePage(),
       const SettingPage(),
     ];
@@ -50,10 +50,10 @@ class _BottomTabPageState extends State<BottomTabPage>
           getImage("home", isSelected: false),
           getImage("home"),
         ],
-        [
-          getImage("search", isSelected: false),
-          getImage("search"),
-        ],
+        // [
+        //   getImage("search", isSelected: false),
+        //   getImage("search"),
+        // ],
         [
           getImage("favorite", isSelected: false),
           getImage("favorite"),

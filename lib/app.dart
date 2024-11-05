@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_todo/language/generated/l10n.dart';
 import 'package:flutter_todo/pages/app_download/app_download_page.dart';
@@ -21,6 +22,7 @@ import 'package:flutter_todo/pages/smart_home/smart_home_page.dart';
 import 'package:flutter_todo/pages/test_async_page.dart';
 import 'package:flutter_todo/pages/test_language_page.dart';
 import 'package:flutter_todo/pages/test_route_page.dart';
+import 'package:flutter_todo/pages/text_field/text_field_page.dart';
 import 'package:flutter_todo/providers/app_language_provider.dart';
 import 'package:flutter_todo/resources/app_colors_theme.dart';
 import 'package:flutter_todo/resources/app_dimensions_theme.dart';
@@ -30,6 +32,7 @@ import 'package:flutter_todo/resources/styles/app_themes.dart';
 import 'package:provider/provider.dart';
 
 import 'main_page.dart';
+import 'pages/search_page/good_list_page.dart';
 
 abstract class IRouterProvider {
   void initRouter(FluroRouter router);
@@ -54,8 +57,10 @@ class MyRoutes {
   static String customPainter = "/customPainter";
   static String buildContext = "/buildContext";
   static String smartHome = "/smartHome";
-  static String inheritedWidget = "inheritedWidget";
-  static String genericWidgetPage = 'genericWidgetPage';
+  static String inheritedWidget = "/inheritedWidget";
+  static String genericWidgetPage = '/genericWidgetPage';
+  static String textFieldPage = '/textFieldPage';
+  static String goodListPage = '/goodListPage';
 
   static void configureRoutes() {
     router.notFoundHandler = Handler(
@@ -133,6 +138,12 @@ class MyRoutes {
           Map<String, List<String>> parameters,
         ) =>
                 const GenericWidgetPage()));
+
+    router.define(textFieldPage,
+        handler: Handler(handlerFunc: (_, __) => const TextFieldPage()));
+
+    router.define(goodListPage,
+        handler: Handler(handlerFunc: (_, __) => const GoodListPage()));
   }
 }
 
@@ -161,60 +172,63 @@ class App extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         LanguageCode languageCode =
             context.watch<AppLanguageProvider>().languageCode;
-        return MaterialApp(
-          title: 'Flutter 技术实践',
-          // theme: Theme.of(context).copyWith(
-          //   extensions: [
-          //     // AppDimensionsTheme.main(),
-          //     AppColorsTheme.light(),
-          //     AppTextsTheme.main(),
-          //   ],
-          // ),
-          theme: lightTheme,
-          darkTheme: darkTheme,
-          // theme: ThemeData(
-          //   // 设置主色为蓝色
-          //   primaryColor: Colors.blue,
-          //   // 设置默认字体为Roboto
-          //   fontFamily: 'Roboto',
-          //   // 设置默认文本样式
-          //   textTheme: const TextTheme(
-          //     // 设置标题文本样式
-          //     displayMedium:
-          //     TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          //     // 设置正文文本样式
-          //     bodyMedium: TextStyle(fontSize: 16),
-          //   ),
-          //   // 设置按钮的样式
-          //   buttonTheme: ButtonThemeData(
-          //     buttonColor: Colors.blue, // 按钮颜色
-          //     shape: RoundedRectangleBorder(
-          //       borderRadius: BorderRadius.circular(8), // 圆角半径
-          //     ),
-          //     textTheme: ButtonTextTheme.primary, // 按钮文本颜色
-          //   ),
-          // ),
-          themeMode: ThemeMode.system,
-          // key: locator<NavigationService>().navigatorKey,
-          onGenerateRoute: MyRoutes.router.generator,
-          initialRoute: MyRoutes.root,
-          debugShowCheckedModeBanner: false,
-          supportedLocales: S.delegate.supportedLocales,
-          locale: Locale.fromSubtags(languageCode: languageCode.name),
-          localizationsDelegates: const [
-            S.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-          localeResolutionCallback:
-              (Locale? locale, Iterable<Locale> supportedLocales) {
-            Locale currentLocale =
-                Locale.fromSubtags(languageCode: locale?.languageCode ?? "en");
-            return supportedLocales.contains(currentLocale)
-                ? currentLocale
-                : const Locale.fromSubtags(languageCode: "en");
-          },
+        return AnnotatedRegion<SystemUiOverlayStyle>(
+          value: SystemUiOverlayStyle.dark,
+          child: MaterialApp(
+            title: 'Flutter 技术实践',
+            // theme: Theme.of(context).copyWith(
+            //   extensions: [
+            //     // AppDimensionsTheme.main(),
+            //     AppColorsTheme.light(),
+            //     AppTextsTheme.main(),
+            //   ],
+            // ),
+            theme: lightTheme,
+            darkTheme: darkTheme,
+            // theme: ThemeData(
+            //   // 设置主色为蓝色
+            //   primaryColor: Colors.blue,
+            //   // 设置默认字体为Roboto
+            //   fontFamily: 'Roboto',
+            //   // 设置默认文本样式
+            //   textTheme: const TextTheme(
+            //     // 设置标题文本样式
+            //     displayMedium:
+            //     TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            //     // 设置正文文本样式
+            //     bodyMedium: TextStyle(fontSize: 16),
+            //   ),
+            //   // 设置按钮的样式
+            //   buttonTheme: ButtonThemeData(
+            //     buttonColor: Colors.blue, // 按钮颜色
+            //     shape: RoundedRectangleBorder(
+            //       borderRadius: BorderRadius.circular(8), // 圆角半径
+            //     ),
+            //     textTheme: ButtonTextTheme.primary, // 按钮文本颜色
+            //   ),
+            // ),
+            themeMode: ThemeMode.system,
+            // key: locator<NavigationService>().navigatorKey,
+            onGenerateRoute: MyRoutes.router.generator,
+            initialRoute: MyRoutes.root,
+            debugShowCheckedModeBanner: false,
+            supportedLocales: S.delegate.supportedLocales,
+            locale: Locale.fromSubtags(languageCode: languageCode.name),
+            localizationsDelegates: const [
+              S.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            localeResolutionCallback:
+                (Locale? locale, Iterable<Locale> supportedLocales) {
+              Locale currentLocale =
+                  Locale.fromSubtags(languageCode: locale?.languageCode ?? "en");
+              return supportedLocales.contains(currentLocale)
+                  ? currentLocale
+                  : const Locale.fromSubtags(languageCode: "en");
+            },
+          ),
         );
       },
     );

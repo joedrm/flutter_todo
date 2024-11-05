@@ -23,14 +23,22 @@ dependencies:
 #  url_strategy: ^0.2.0
   flutter_hooks: ^0.15.0
   hooks_riverpod: ^0.12.1
-#  chat_gpt_sdk: ^1.0.2+4
   after_layout:
   provider: ^6.1.2
   lint:
   get_it:
+  flutter_svg: ^1.0.3
   fl_chart: ^0.62.0
-#  flutter_riverpod:
-#  js: ^0.6.2
+  domain:
+    path: packages/domain
+  data:
+    path: packages/data
+  shared:
+    path: packages/shared
+  widgets:
+    path: packages/widgets
+  resources:
+    path: packages/resources
 
 dev_dependencies:
   flutter_test:

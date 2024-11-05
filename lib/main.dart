@@ -5,6 +5,7 @@ import 'dart:isolate';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 // import 'package:url_strategy/url_strategy.dart';
 
 import 'app.dart';
@@ -30,6 +31,11 @@ Future<void> main() async {
 
   /// 去掉 url 中的 "#"
   // setPathUrlStrategy();
+
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      //设置状态栏透明
+      statusBarColor: Colors.white, // Color for Android
+      statusBarBrightness: Brightness.dark));
 
   runApp(App());
 }

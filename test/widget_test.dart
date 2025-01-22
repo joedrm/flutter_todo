@@ -10,7 +10,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_todo/app.dart';
 
 import 'package:flutter_todo/main.dart';
-import 'package:leancloud_storage/leancloud.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

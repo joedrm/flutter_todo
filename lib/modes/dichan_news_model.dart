@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:leancloud_storage/leancloud.dart';
+// import 'package:leancloud_storage/leancloud.dart';
 
 class DiChanNewsModel {
   String? sType;
@@ -32,38 +32,38 @@ class DiChanNewsModel {
       this.url,
       this.imgs});
 
-  DiChanNewsModel.fromJson(LCObject json) {
-    sType = json['__type'];
-    className = json['className'];
-    objectId = json['objectId'];
-    createdAt = json['createdAt'];
-    updatedAt = json['updatedAt'];
-    content = json['content'];
-    source = json['source'];
-    title = json['title'];
-    author = json['author'];
-    createTime = json['create_time'];
-    url = json['url'];
-
-    if (json["images"] != null) {
-      imgs = json["images"].toString().split(",");
-    } else {
-      imgs = ["https://s2.loli.net/2022/08/24/jGxSI4897mA5NHi.jpg"];
-    }
-
-    if (content != null) {
-      var list = jsonDecode(content!) as List;
-      List<ContentModel> models = [];
-      for (var element in list) {
-        var model = ContentModel.fromJson(element);
-        models.add(model);
-        if (desc.isEmpty && model.type == "text") {
-          desc = (model.value ?? "").trim();
-        }
-      }
-      contentModels = models;
-    }
-  }
+  // DiChanNewsModel.fromJson(LCObject json) {
+  //   sType = json['__type'];
+  //   className = json['className'];
+  //   objectId = json['objectId'];
+  //   createdAt = json['createdAt'];
+  //   updatedAt = json['updatedAt'];
+  //   content = json['content'];
+  //   source = json['source'];
+  //   title = json['title'];
+  //   author = json['author'];
+  //   createTime = json['create_time'];
+  //   url = json['url'];
+  //
+  //   if (json["images"] != null) {
+  //     imgs = json["images"].toString().split(",");
+  //   } else {
+  //     imgs = ["https://s2.loli.net/2022/08/24/jGxSI4897mA5NHi.jpg"];
+  //   }
+  //
+  //   if (content != null) {
+  //     var list = jsonDecode(content!) as List;
+  //     List<ContentModel> models = [];
+  //     for (var element in list) {
+  //       var model = ContentModel.fromJson(element);
+  //       models.add(model);
+  //       if (desc.isEmpty && model.type == "text") {
+  //         desc = (model.value ?? "").trim();
+  //       }
+  //     }
+  //     contentModels = models;
+  //   }
+  // }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};

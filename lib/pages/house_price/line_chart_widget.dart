@@ -159,14 +159,14 @@ class LineChartWidget extends StatelessWidget {
         horizontalInterval: 1,
         verticalInterval: 1,
         getDrawingHorizontalLine: (value) {
-          return FlLine(
-            color: const Color(0xffaeaeae),
+          return const FlLine(
+            color: Color(0xffaeaeae),
             strokeWidth: 0.5,
           );
         },
         getDrawingVerticalLine: (value) {
-          return FlLine(
-            color: const Color(0xffaeaeae),
+          return const FlLine(
+            color: Color(0xffaeaeae),
             strokeWidth: 0.5,
           );
         },
@@ -174,10 +174,10 @@ class LineChartWidget extends StatelessWidget {
 
   FlTitlesData get titlesData => FlTitlesData(
         show: true,
-        rightTitles: AxisTitles(
+        rightTitles: const AxisTitles(
           sideTitles: SideTitles(showTitles: false),
         ),
-        topTitles: AxisTitles(
+        topTitles: const AxisTitles(
           sideTitles: SideTitles(showTitles: false),
         ),
         bottomTitles: AxisTitles(
@@ -205,7 +205,7 @@ class LineChartWidget extends StatelessWidget {
             (LineChartBarData barData, List<int> spotIndexes) {
           return spotIndexes.map((index) {
             // 每个触摸点的指示器样式
-            return TouchedSpotIndicatorData(
+            return const TouchedSpotIndicatorData(
               FlLine(
                 // 为透明色，因此不会显示指示线
                 color: Colors.transparent,
@@ -220,7 +220,7 @@ class LineChartWidget extends StatelessWidget {
         // 参数用于配置触摸工具提示的显示样式。
         touchTooltipData: LineTouchTooltipData(
           // 设置为透明色，使工具提示背景透明。
-          tooltipBgColor: Colors.transparent,
+          // tooltipBgColor: Colors.transparent,
           tooltipRoundedRadius: 9,
           tooltipPadding: const EdgeInsets.only(bottom: -10),
           // 回调函数返回一个 LineTooltipItem 的列表，用于自定义工具提示的内容和样式。此处显示了触摸点的 Y 轴值，并设置了文本样式。
@@ -243,9 +243,10 @@ class LineChartWidget extends StatelessWidget {
         fontWeight: FontWeight.w300, fontSize: 11, color: Color(0xFF666666));
     String date = dates[value.toInt()];
     return SideTitleWidget(
-      axisSide: meta.axisSide,
+      // axisSide: meta.axisSide,
       angle: 30,
       space: 14,
+      meta: meta,
       child: Text(date, style: style),
     );
   }

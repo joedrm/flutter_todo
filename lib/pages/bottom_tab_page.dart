@@ -101,7 +101,7 @@ class _BottomTabPageState extends State<BottomTabPage>
     List<Widget> tabs = [];
     final List<String> _appBarTitles = [
       S.of(context).tab_home,
-      S.of(context).tab_search,
+      // S.of(context).tab_search,
       S.of(context).tab_favor,
       S.of(context).tab_setting
     ];

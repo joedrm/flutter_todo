@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todo/modes/dichan_news_model.dart';
 import 'package:flutter_todo/utils/device_utils.dart';
 import 'package:flutter_todo/utils/leancloud_util.dart';
-import 'package:leancloud_storage/leancloud.dart';
+// import 'package:leancloud_storage/leancloud.dart';
 
 class NewsPage extends StatefulWidget {
 
@@ -36,16 +36,16 @@ class _NewsPageState extends State<NewsPage> {
   }
 
   fetchData() async {
-    List<LCObject> results = await LeanCloudUtil.query(
-        LeanCloudUtil.dichanNews, 20,
-        skip: datas.length);
-    List<DiChanNewsModel> histories = [];
-    for (LCObject element in results) {
-      DiChanNewsModel historyPo = DiChanNewsModel.fromJson(element);
-      histories.add(historyPo);
-    }
-    datas.addAll(histories);
-    setState(() {});
+    // List<LCObject> results = await LeanCloudUtil.query(
+    //     LeanCloudUtil.dichanNews, 20,
+    //     skip: datas.length);
+    // List<DiChanNewsModel> histories = [];
+    // for (LCObject element in results) {
+    //   DiChanNewsModel historyPo = DiChanNewsModel.fromJson(element);
+    //   histories.add(historyPo);
+    // }
+    // datas.addAll(histories);
+    // setState(() {});
   }
 
   @override
